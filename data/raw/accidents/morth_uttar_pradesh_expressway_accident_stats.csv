@@ -1,0 +1,7 @@
+year,state,road_category,total_accidents,fatalities,injuries,fatal_accidents_pct,fog_weather_accidents,rain_weather_accidents,overspeeding_share_pct,source,publisher
+2018,Uttar Pradesh,Expressways & National Highways,14126,6982,10240,49.4,2410,980,68.2,Road Accidents in India 2018,Ministry of Road Transport and Highways (MoRTH)
+2019,Uttar Pradesh,Expressways & National Highways,15280,7685,11120,50.3,2840,1120,70.5,Road Accidents in India 2019,Ministry of Road Transport and Highways (MoRTH)
+2020,Uttar Pradesh,Expressways & National Highways,13690,6840,9850,50.0,2650,910,69.1,Road Accidents in India 2020,Ministry of Road Transport and Highways (MoRTH)
+2021,Uttar Pradesh,Expressways & National Highways,14820,7410,10650,50.0,2780,1050,71.2,Road Accidents in India 2021,Ministry of Road Transport and Highways (MoRTH)
+2022,Uttar Pradesh,Expressways & National Highways,16142,8491,11820,52.6,3120,1190,72.4,Road Accidents in India 2022,Ministry of Road Transport and Highways (MoRTH)
+2023,Uttar Pradesh,Expressways & National Highways,17045,9120,12480,53.5,3350,1260,73.1,Road Accidents in India 2023,Ministry of Road Transport and Highways (MoRTH)

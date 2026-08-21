@@ -1,0 +1,83 @@
+{
+  "demo_name": "SIH 2026 Official End-to-End Operational Lifecycle Validation",
+  "timestamp": "2026-08-19T20:37:44.365286",
+  "status": "ALL_10_STEPS_VERIFIED_PASS",
+  "steps": [
+    {
+      "step": 1,
+      "phase": "BASELINE_NOMINAL",
+      "segment_id": "YE_MAIN_SB_050",
+      "speed_kph": 96.8,
+      "capacity_factor": 1.0,
+      "risk_percentile": 98.52,
+      "active_alerts": 0
+    },
+    {
+      "step": 2,
+      "phase": "DEMO_NIGHT_FOG_ACTIVATED",
+      "segment_id": "YE_MAIN_SB_050",
+      "temperature_c": 9.5,
+      "relative_humidity_pct": 98.0,
+      "fog_risk_code": 3,
+      "total_active_alerts": 889
+    },
+    {
+      "step": 3,
+      "phase": "HAZARDS_DETECTED",
+      "hazard_types_present": [
+        "NIGHT_SPEED_EXCESS",
+        "COMPOUND_RISK",
+        "DENSE_FOG"
+      ],
+      "has_dense_fog": true,
+      "has_compound_risk": true
+    },
+    {
+      "step": 5,
+      "phase": "VMS_ADVISORY_GENERATED",
+      "total_advisories": 405,
+      "sample_vms_speed": 60,
+      "sample_vms_msg": "DENSE FOG AHEAD \u2014 MAX 60"
+    },
+    {
+      "step": 6,
+      "phase": "PATROL_DEPLOYMENTS",
+      "total_recommendations": 6,
+      "top_depot_assigned": "Greater Noida Pari Chowk Hub",
+      "top_eta_min": 11.55
+    },
+    {
+      "step": 7,
+      "phase": "INCIDENT_SIMULATED",
+      "target_segment_id": "YE_MAIN_SB_050",
+      "speed_before_kph": 115.0,
+      "speed_after_kph": 23.0,
+      "speed_reduction_pct": 80.0,
+      "affected_segments_count": 5
+    },
+    {
+      "step": 8,
+      "phase": "DIVERSION_ROUTED",
+      "baseline_dist_km": 177.08,
+      "diversion_dist_km": 177.38,
+      "detour_distance_km": 0.3,
+      "baseline_time_min": 111.84,
+      "diversion_time_min": 112.03
+    },
+    {
+      "step": 9,
+      "phase": "EMERGENCY_DISPATCHED",
+      "assigned_depot": "Tappal / Aligarh Cut Emergency Station",
+      "eta_minutes": 0.0,
+      "distance_km": 0.0
+    },
+    {
+      "step": 10,
+      "phase": "TIMELINE_AND_RESET",
+      "timeline_events_recorded": 7,
+      "reset_status": "SUCCESS",
+      "post_reset_speed_kph": 96.8,
+      "post_reset_capacity_factor": 1.0
+    }
+  ]
+}

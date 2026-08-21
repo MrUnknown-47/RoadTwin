@@ -1,0 +1,131 @@
+{
+  "checkpoint": "Checkpoint 08 \u2014 Dynamic Digital Twin State Engine Preflight",
+  "timestamp": "2026-08-19T23:40:10.444735",
+  "status": "PREFLIGHT_PASS_READY_FOR_SIMULATION",
+  "upstream_checkpoints": {
+    "CP01_osm_layer_b_graphml": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_routing.graphml",
+      "exists": true,
+      "size_kb": 2365.05
+    },
+    "CP01_osm_layer_b_edges": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_edges.parquet",
+      "exists": true,
+      "size_kb": 832.76
+    },
+    "CP02_segments_parquet": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/segments/yamuna_expressway_segments.parquet",
+      "exists": true,
+      "size_kb": 81.71
+    },
+    "CP03_accidents_parquet": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/accident_segment_mapping.parquet",
+      "exists": true,
+      "size_kb": 27.05
+    },
+    "CP04_weather_parquet": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/corridor_weather_hourly_2021_2023.parquet",
+      "exists": true,
+      "size_kb": 2143.83
+    },
+    "CP05_traffic_baseline_parquet": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/traffic/corridor_traffic_baseline_hourly.parquet",
+      "exists": true,
+      "size_kb": 50.68
+    },
+    "CP06_master_dataset_parquet": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/master/roadtwin_master_historical_features.parquet",
+      "exists": true,
+      "size_kb": 122845.68
+    },
+    "CP07_model_json": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/xgb_risk_model.json",
+      "exists": true,
+      "size_kb": 215.17
+    },
+    "CP07_model_config": {
+      "path": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/model_config.json",
+      "exists": true,
+      "size_kb": 1.25
+    }
+  },
+  "graph_layer_b": {
+    "file_path": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_routing.graphml",
+    "node_count": 1863,
+    "edge_count": 3461,
+    "is_directed": true,
+    "strongly_connected_components": 148,
+    "weakly_connected_components": 15
+  },
+  "segment_registry": {
+    "file_path": "/Users/vaibhavsingh/RoadTwin/data/processed/segments/yamuna_expressway_segments.parquet",
+    "total_segments": 405,
+    "mainline_segments": 366,
+    "ramp_segments": 39,
+    "southbound_segments": 201,
+    "northbound_segments": 204,
+    "total_corridor_length_km": 367.99
+  },
+  "segment_graph_mapping": {
+    "mapping_file": "/Users/vaibhavsingh/RoadTwin/data/processed/digital_twin/segment_graph_edge_mapping.parquet",
+    "total_segments_evaluated": 405,
+    "successfully_mapped_segments": 405,
+    "unmapped_segments_count": 0,
+    "mapping_success_rate_percent": 100.0,
+    "unique_parent_graph_edges": 153
+  },
+  "ml_risk_model": {
+    "model_file": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/xgb_risk_model.json",
+    "config_file": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/model_config.json",
+    "model_type": "XGBClassifier",
+    "version": "3.2.0",
+    "feature_count": 31,
+    "feature_names": [
+      "is_mainline",
+      "is_ramp",
+      "is_interchange_related",
+      "chainage_start_km",
+      "length_m",
+      "lanes",
+      "maxspeed_osm_kph",
+      "hour_of_day",
+      "day_of_week",
+      "is_weekend",
+      "month",
+      "season_code",
+      "temperature_c",
+      "dew_point_c",
+      "relative_humidity_pct",
+      "precipitation_mm_hr",
+      "wind_speed_ms",
+      "surface_pressure_kpa",
+      "dew_point_depression_c",
+      "fog_risk_code",
+      "speed_kph",
+      "free_flow_speed_kph",
+      "travel_time_seconds",
+      "congestion_ratio",
+      "speed_reduction_pct",
+      "speed_excess_kph",
+      "historical_accidents_prior_30d",
+      "historical_accidents_prior_365d",
+      "historical_fatal_accidents_prior_365d",
+      "historical_fatalities_prior_365d",
+      "historical_injuries_prior_365d"
+    ],
+    "risk_categories": [
+      "LOW_RISK",
+      "MODERATE_RISK",
+      "HIGH_RISK",
+      "CRITICAL_RISK"
+    ]
+  },
+  "traffic_provider": {
+    "default_mode": "BASELINE_DEMONSTRATION",
+    "baseline_data_available": true,
+    "tomtom_live_adapter_configured": true,
+    "tomtom_api_key_present": false,
+    "live_traffic_status": "MOCK_OR_UNAVAILABLE"
+  },
+  "compatibility_issues": []
+}

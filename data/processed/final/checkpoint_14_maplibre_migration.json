@@ -1,0 +1,44 @@
+{
+  "checkpoint": "Checkpoint 14 \u2014 Mapbox GL JS to MapLibre GL JS Migration",
+  "timestamp": "2026-08-20T00:02:47.271421",
+  "status": "MAP_PROVIDER_INDEPENDENT_AND_SIH_READY",
+  "dependency_migration": {
+    "removed_packages": [
+      "mapbox-gl",
+      "@types/mapbox-gl"
+    ],
+    "added_packages": [
+      "maplibre-gl (4.7.1)"
+    ],
+    "mapbox_token_eliminated": true,
+    "next_public_mapbox_token_removed": true
+  },
+  "map_rendering_architecture": {
+    "map_engine": "MapLibre GL JS",
+    "basemap_provider": "OpenStreetMap / CartoDB Dark Matter (Public Raster)",
+    "offline_resilience": "Local #0B1120 background canvas fallback layer + non-blocking error handler",
+    "corridor_geometry_source": "frontend/public/data/yamuna_expressway_segments.geojson",
+    "total_rendered_segments": 405,
+    "southbound_segments": 201,
+    "northbound_segments": 204,
+    "ramp_segments": 39
+  },
+  "preserved_interactive_capabilities": {
+    "segment_selection": "PASS",
+    "risk_visualization_4_tier": "PASS",
+    "what_if_incident_simulation_overlay": "PASS",
+    "upstream_queue_spillback_overlay": "PASS",
+    "diversion_route_layer": "PASS",
+    "emergency_dispatch_route_layer": "PASS",
+    "emergency_vehicle_animation": "PASS",
+    "directional_carriageway_filters": "PASS (ALL, SB, NB, RAMPS)",
+    "hover_tooltips_and_search": "PASS"
+  },
+  "backend_and_ml_integrity": {
+    "cp07_xgboost_31_features": "UNTOUCHED_AND_VALIDATED",
+    "cp08_dijkstra_routing_1863_nodes": "UNTOUCHED_AND_VALIDATED",
+    "cp10_operational_intelligence": "UNTOUCHED_AND_VALIDATED",
+    "cp11_production_hardening": "UNTOUCHED_AND_VALIDATED",
+    "cp13_tomtom_live_traffic": "UNTOUCHED_AND_VALIDATED"
+  }
+}

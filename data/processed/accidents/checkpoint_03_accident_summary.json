@@ -1,0 +1,101 @@
+{
+  "checkpoint": "Checkpoint 03 \u2014 Historical Accident Data Discovery & Segment Mapping",
+  "inventory": [
+    {
+      "dataset_name": "YEIDA Yamuna Expressway Annual Accident Disclosures",
+      "source": "Official RTI Disclosures / Jaypee Infratech Records",
+      "publisher": "Yamuna Expressway Industrial Development Authority (YEIDA)",
+      "coverage_years": "2012 - 2023 (12 years)",
+      "geographic_scope": "Full Yamuna Expressway Corridor (165 km)",
+      "number_of_records": 12,
+      "location_type": "CORRIDOR_AGGREGATE",
+      "latitude_available": false,
+      "longitude_available": false,
+      "chainage_available": false,
+      "date_available": true,
+      "time_available": false,
+      "severity_available": true,
+      "fatalities_available": true,
+      "injuries_available": true,
+      "road_name_available": true,
+      "weather_available": true,
+      "data_format": "CSV"
+    },
+    {
+      "dataset_name": "MoRTH Road Accidents in India (UP State Tables)",
+      "source": "Ministry of Road Transport and Highways (MoRTH)",
+      "publisher": "Government of India (Transport Research Wing)",
+      "coverage_years": "2018 - 2023 (6 years)",
+      "geographic_scope": "Uttar Pradesh Expressways & National Highways",
+      "number_of_records": 6,
+      "location_type": "STATE_ROAD_CLASS_AGGREGATE",
+      "latitude_available": false,
+      "longitude_available": false,
+      "chainage_available": false,
+      "date_available": true,
+      "time_available": false,
+      "severity_available": true,
+      "fatalities_available": true,
+      "injuries_available": true,
+      "road_name_available": false,
+      "weather_available": true,
+      "data_format": "CSV"
+    },
+    {
+      "dataset_name": "Yamuna Expressway Corridor Milestone & Chainage Accident Observations",
+      "source": "YEIDA Toll Barrier Logs / Police FIR Records / SaveLIFE Audit Disclosures",
+      "publisher": "SaveLIFE Foundation & TRIPP (IIT Delhi) Corridor Audits",
+      "coverage_years": "2021 - 2023 (3 years)",
+      "geographic_scope": "Yamuna Expressway (Greater Noida to Agra)",
+      "number_of_records": 40,
+      "location_type": "CHAINAGE_AND_MILESTONE",
+      "latitude_available": false,
+      "longitude_available": false,
+      "chainage_available": true,
+      "date_available": true,
+      "time_available": true,
+      "severity_available": true,
+      "fatalities_available": true,
+      "injuries_available": true,
+      "road_name_available": true,
+      "weather_available": true,
+      "data_format": "CSV"
+    }
+  ],
+  "mapping_metrics": {
+    "total_observations_ingested": 40,
+    "mapped_to_segments": 40,
+    "unmapped_observations": 0,
+    "mapping_percentage": 100.0,
+    "confidence_distribution": {
+      "HIGH_CONFIDENCE": 40
+    },
+    "median_match_distance_m": 0.0,
+    "mean_match_distance_m": 0.0,
+    "p95_match_distance_m": 0.0,
+    "max_match_distance_m": 0.0
+  },
+  "corridor_historical_totals_yeida_2012_2023": {
+    "total_accidents": 7625,
+    "fatal_accidents": 1256,
+    "total_fatalities": 1420,
+    "total_injuries": 11168,
+    "primary_causes": {
+      "drowsy_driving": 3364,
+      "overspeeding": 1299,
+      "tyre_burst": 781,
+      "fog_poor_visibility": 1080,
+      "drunken_driving": 272,
+      "stationary_vehicle_or_other": 830
+    }
+  },
+  "saved_files": {
+    "annual_context_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/yeida_annual_accidents_context.csv",
+    "annual_context_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/yeida_annual_accidents_context.parquet",
+    "mapped_accidents_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/accident_segment_mapping.gpkg",
+    "mapped_accidents_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/accident_segment_mapping.parquet",
+    "mapped_accidents_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/accident_segment_mapping.csv",
+    "segment_aggregates_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/segment_accident_aggregates.csv",
+    "segment_aggregates_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/accidents/segment_accident_aggregates.parquet"
+  }
+}

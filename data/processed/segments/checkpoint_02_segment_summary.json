@@ -1,0 +1,60 @@
+{
+  "corridor": "Yamuna Expressway (Greater Noida to Agra)",
+  "source_network": {
+    "source_edges_count": 153,
+    "source_total_length_km": 367.994
+  },
+  "segment_network": {
+    "total_segments_count": 405,
+    "total_length_km": 367.994,
+    "length_conservation": {
+      "source_length_m": 367993.83,
+      "segment_length_m": 367993.83,
+      "absolute_diff_m": 0.0,
+      "pct_diff": 0.0
+    }
+  },
+  "mainline_segments": {
+    "count": 366,
+    "min_m": 30.28,
+    "max_m": 1461.92,
+    "mean_m": 953.33,
+    "median_m": 992.07,
+    "p25_m": 959.89,
+    "p75_m": 1040.74,
+    "p95_m": 1120.4,
+    "total_length_km": 348.919
+  },
+  "ramp_segments": {
+    "count": 39,
+    "min_m": 7.98,
+    "max_m": 2733.39,
+    "mean_m": 489.09,
+    "median_m": 294.42,
+    "p25_m": 39.01,
+    "p75_m": 721.07,
+    "p95_m": 1435.5,
+    "total_length_km": 19.074
+  },
+  "directionality": {
+    "southbound_sb_count": 201,
+    "southbound_sb_km": 182.922,
+    "northbound_nb_count": 204,
+    "northbound_nb_km": 185.071
+  },
+  "interchange_classification": {
+    "mainline_count": 366,
+    "ramp_count": 39,
+    "interchange_related_total": 43,
+    "interchange_related_mainline": 4,
+    "interchange_related_ramps": 39
+  },
+  "data_quality": {
+    "null_geometries": 0,
+    "invalid_geometries": 0,
+    "empty_geometries": 0,
+    "zero_length_segments": 0,
+    "duplicate_segment_ids": 0,
+    "duplicate_geometries": 0
+  }
+}

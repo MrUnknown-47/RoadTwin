@@ -1,0 +1,85 @@
+{
+  "checkpoint": "Checkpoint 06 \u2014 Master Multi-Source Feature Fusion & Digital Twin Dataset",
+  "dataset_grain": "ONE ROW = ONE ROADTWIN SEGMENT AT ONE HISTORICAL HOURLY TIMESTAMP",
+  "primary_key": [
+    "segment_id",
+    "timestamp_utc"
+  ],
+  "total_rows": 10643400,
+  "total_segments": 405,
+  "total_hourly_timestamps": 26280,
+  "temporal_range": {
+    "start_timestamp_utc": "2021-01-01 00:00:00",
+    "end_timestamp_utc": "2023-12-31 23:00:00",
+    "start_timestamp_ist": "2021-01-01 05:30:00",
+    "end_timestamp_ist": "2024-01-01 04:30:00"
+  },
+  "feature_groups": {
+    "road_infrastructure_features": [
+      "segment_id",
+      "direction",
+      "is_mainline",
+      "is_ramp",
+      "is_interchange_related",
+      "interchange_name",
+      "chainage_start_km",
+      "chainage_end_km",
+      "length_m",
+      "road_class",
+      "lanes",
+      "maxspeed_osm_kph"
+    ],
+    "temporal_calendar_features": [
+      "timestamp_utc",
+      "timestamp_ist",
+      "date",
+      "hour_of_day",
+      "day_of_week",
+      "is_weekend",
+      "month",
+      "season"
+    ],
+    "meteorological_features": [
+      "temperature_c",
+      "dew_point_c",
+      "relative_humidity_pct",
+      "precipitation_rate_mm_day",
+      "precipitation_mm_hr",
+      "wind_speed_ms",
+      "surface_pressure_kpa",
+      "dew_point_depression_c",
+      "derived_fog_indicator",
+      "weather_anchor_id",
+      "weather_grid_cell_id",
+      "weather_time_difference_minutes"
+    ],
+    "traffic_baseline_features": [
+      "free_flow_speed_kph",
+      "speed_kph",
+      "travel_time_seconds",
+      "congestion_ratio",
+      "speed_reduction_pct",
+      "traffic_state_label",
+      "speed_source",
+      "free_flow_speed_source",
+      "traffic_mapping_method"
+    ],
+    "historical_accident_lookback_features": [
+      "historical_accidents_prior_30d",
+      "historical_accidents_prior_365d",
+      "historical_fatal_accidents_prior_365d",
+      "historical_fatalities_prior_365d",
+      "historical_injuries_prior_365d"
+    ]
+  },
+  "performance_and_storage": {
+    "total_processing_time_seconds": 42.16,
+    "parquet_file_size_mb": 98.9,
+    "compression": "snappy"
+  },
+  "saved_files": {
+    "master_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/master/roadtwin_master_historical_features.parquet",
+    "feature_catalog_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/master/roadtwin_feature_catalog.csv",
+    "schema_json": "/Users/vaibhavsingh/RoadTwin/data/processed/master/roadtwin_master_schema.json"
+  }
+}

@@ -1,0 +1,5 @@
+configuration,feature_count,roc_auc,pr_auc,precision_top_5pct,recall_top_5pct,recall_top_10pct
+Model A: Weather Only (8 features),8,0.4857,0.002,0.0,0.0,0.0294
+Model B: Weather + Traffic (14 features),14,0.6821,0.0036,0.0053,0.1176,0.2059
+Model C: Weather + Traffic + Road (21 features),26,0.6306,0.004,0.008,0.1765,0.2353
+Model D: Full Multi-Source Fusion (27 features),31,0.6273,0.004,0.008,0.1765,0.2353

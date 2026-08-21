@@ -1,0 +1,27 @@
+{
+  "frontend_framework": "Next.js 15 (App Router) with TypeScript & Tailwind CSS",
+  "map_library": "MapLibre GL JS (with Dark Matter vector/raster fallback)",
+  "api_base_url": "http://localhost:8000 (configurable via NEXT_PUBLIC_API_URL)",
+  "consumed_endpoints": [
+    {
+      "endpoint": "GET /health",
+      "purpose": "Corridor health status, node/edge counts, online indicator",
+      "status": "VERIFIED"
+    },
+    {
+      "endpoint": "GET /api/v1/digital-twin/state?limit=405",
+      "purpose": "Corridor-wide 405 segment states, speed, risk scoring",
+      "status": "VERIFIED"
+    },
+    {
+      "endpoint": "GET /api/v1/digital-twin/segment/{segment_id}",
+      "purpose": "Single-segment telemetry inspection on map click",
+      "status": "VERIFIED"
+    }
+  ],
+  "geojson_asset": {
+    "path": "frontend/public/data/yamuna_expressway_segments.geojson",
+    "feature_count": 405,
+    "crs": "EPSG:4326 (WGS84)"
+  }
+}

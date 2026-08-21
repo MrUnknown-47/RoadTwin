@@ -1,0 +1,71 @@
+{
+  "audit_name": "RoadTwin AI Final Performance & Latency Audit",
+  "timestamp": "2026-08-19T20:37:52.770073",
+  "environment": "Apple Silicon M-Series (macOS / Local Test Harness)",
+  "engine_micro_benchmarks_ms": {
+    "corridor_state_scan_405_segments": 3.63,
+    "cp07_xgboost_risk_inference_405_segments": 2.23,
+    "dijkstra_corridor_routing_177km": 16.85,
+    "emergency_dispatch_nearest_depot": 39.68
+  },
+  "http_endpoint_latencies_ms": {
+    "health_liveness_http": {
+      "mean_ms": 3.01,
+      "median_ms": 2.97,
+      "p95_ms": 3.94,
+      "min_ms": 2.75,
+      "max_ms": 3.94
+    },
+    "readiness_diagnostic_http": {
+      "mean_ms": 3.98,
+      "median_ms": 3.86,
+      "p95_ms": 5.05,
+      "min_ms": 3.61,
+      "max_ms": 5.05
+    },
+    "engine_benchmarks_http": {
+      "mean_ms": 66.66,
+      "median_ms": 65.76,
+      "p95_ms": 74.71,
+      "min_ms": 64.15,
+      "max_ms": 74.71
+    },
+    "state_snapshot_405_http": {
+      "mean_ms": 52.04,
+      "median_ms": 51.9,
+      "p95_ms": 53.75,
+      "min_ms": 51.2,
+      "max_ms": 53.75
+    },
+    "segment_detail_http": {
+      "mean_ms": 1.68,
+      "median_ms": 1.65,
+      "p95_ms": 1.96,
+      "min_ms": 1.54,
+      "max_ms": 1.96
+    },
+    "active_alerts_http": {
+      "mean_ms": 2.11,
+      "median_ms": 2.02,
+      "p95_ms": 3.46,
+      "min_ms": 1.89,
+      "max_ms": 3.46
+    },
+    "vms_advisories_http": {
+      "mean_ms": 5.83,
+      "median_ms": 5.67,
+      "p95_ms": 7.07,
+      "min_ms": 5.4,
+      "max_ms": 7.07
+    }
+  },
+  "concurrency_benchmark_10_threads_100_requests": {
+    "total_requests": 100,
+    "concurrency": 10,
+    "errors": 0,
+    "error_rate_pct": 0.0,
+    "throughput_req_per_sec": 61.01,
+    "mean_latency_ms": 0.0,
+    "p95_latency_ms": 0.0
+  }
+}

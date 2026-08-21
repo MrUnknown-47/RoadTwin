@@ -1,0 +1,211 @@
+[
+  {
+    "artifact_path": "data/raw/osm/yamuna_expressway_network.osm",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP01",
+    "provenance": "OpenStreetMap API (Overpass)",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/osm/yamuna_expressway_network.geojson",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP01",
+    "provenance": "Extracted OSM Expressway Way & Node Geometries",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/segments/yamuna_expressway_segments.parquet",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 83540,
+    "size_kb": 81.58,
+    "row_or_element_count": "405 rows, 19 columns",
+    "checkpoint_dependency": "CP02",
+    "provenance": "Standardized 405 Directed RoadTwin Segments",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "frontend/public/data/yamuna_expressway_segments.geojson",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 335320,
+    "size_kb": 327.46,
+    "row_or_element_count": "405 features",
+    "checkpoint_dependency": "CP02",
+    "provenance": "GeoJSON Frontend Map Display Asset (405 Segments)",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/accidents/yamuna_historical_accidents_mapped.parquet",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP03",
+    "provenance": "40 Chainage-Mapped Historical Crash Records (MoRTH/YEIDA)",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/weather/corridor_weather_hourly_2021_2023.parquet",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 2217001,
+    "size_kb": 2165.04,
+    "row_or_element_count": "131400 rows, 21 columns",
+    "checkpoint_dependency": "CP04",
+    "provenance": "NASA POWER / MERRA-2 2021-2023 Hourly Reanalysis (131,400 rows)",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/weather/segment_weather_spatial_mapping.parquet",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 74643,
+    "size_kb": 72.89,
+    "row_or_element_count": "405 rows, 14 columns",
+    "checkpoint_dependency": "CP04",
+    "provenance": "Nearest-Neighbor Spatial Mapping of 405 Segments to Weather Anchors",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/traffic/corridor_traffic_baseline_hourly.parquet",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 52204,
+    "size_kb": 50.98,
+    "row_or_element_count": "19440 rows, 21 columns",
+    "checkpoint_dependency": "CP05",
+    "provenance": "SaveLIFE / TRIPP / YEIDA Survey-Calibrated Diurnal Baseline (19,440 rows)",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/master/yamuna_master_feature_dataset.parquet",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP06",
+    "provenance": "Unified 10,643,400-Row Master Spatio-Temporal Digital Twin Dataset",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/ml/checkpoint_07_xgboost_model.json",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP07",
+    "provenance": "CP07 XGBoost 31-Feature Spatio-Temporal Relative Risk Model",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/ml/checkpoint_07_metadata.json",
+    "exists": false,
+    "readable": false,
+    "size_bytes": 0,
+    "size_kb": 0.0,
+    "row_or_element_count": null,
+    "checkpoint_dependency": "CP07",
+    "provenance": "Risk Model Metadata & 31 Strict Feature Ordering",
+    "validation_status": "FAIL"
+  },
+  {
+    "artifact_path": "data/processed/osm/yamuna_corridor_layer_b_routing.graphml",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 2421810,
+    "size_kb": 2365.05,
+    "row_or_element_count": "1863 nodes, 3461 edges",
+    "checkpoint_dependency": "CP08",
+    "provenance": "Layer B Directed MultiDiGraph (1,863 nodes, 3,461 edges)",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/digital_twin/segment_graph_edge_mapping.parquet",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 23793,
+    "size_kb": 23.24,
+    "row_or_element_count": "405 rows, 13 columns",
+    "checkpoint_dependency": "CP08",
+    "provenance": "405 Segment to Graph Edge Mapping",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "frontend/.next/BUILD_ID",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 21,
+    "size_kb": 0.02,
+    "row_or_element_count": "Text/Binary Configuration",
+    "checkpoint_dependency": "CP09",
+    "provenance": "Next.js 15 App Router Production Build Artifact",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "data/processed/digital_twin/alerts.db",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 14184448,
+    "size_kb": 13852.0,
+    "row_or_element_count": "24021 alerts in alerts table",
+    "checkpoint_dependency": "CP10",
+    "provenance": "SQLite Persistent Alert Lifecycle Database (WAL Journaling)",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "scripts/config.py",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 3145,
+    "size_kb": 3.07,
+    "row_or_element_count": "Text/Binary Configuration",
+    "checkpoint_dependency": "CP11",
+    "provenance": "Centralized Production Configuration & Environment Module",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "Dockerfile.backend",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 1720,
+    "size_kb": 1.68,
+    "row_or_element_count": "Text/Binary Configuration",
+    "checkpoint_dependency": "CP11",
+    "provenance": "FastAPI Multi-Stage Production Dockerfile",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "Dockerfile.frontend",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 930,
+    "size_kb": 0.91,
+    "row_or_element_count": "Text/Binary Configuration",
+    "checkpoint_dependency": "CP11",
+    "provenance": "Next.js Multi-Stage Production Dockerfile",
+    "validation_status": "PASS"
+  },
+  {
+    "artifact_path": "docker-compose.yml",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 866,
+    "size_kb": 0.85,
+    "row_or_element_count": "Text/Binary Configuration",
+    "checkpoint_dependency": "CP11",
+    "provenance": "Multi-Container Deployment Orchestration Configuration",
+    "validation_status": "PASS"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "flowSegmentData": {
+    "frc": "FRC0",
+    "currentSpeed": 96,
+    "freeFlowSpeed": 102,
+    "currentTravelTime": 38,
+    "freeFlowTravelTime": 35,
+    "confidence": 0.94,
+    "roadClosure": false,
+    "coordinates": {
+      "coordinate": [
+        {"latitude": 28.4480, "longitude": 77.5020},
+        {"latitude": 28.4410, "longitude": 77.5050}
+      ]
+    },
+    "@version": "relative0"
+  },
+  "metadata": {
+    "provider": "TomTom",
+    "endpoint": "https://api.tomtom.com/traffic/services/4/flowSegmentData/relative0/10/json",
+    "unit": "km/h for speed, seconds for travel time",
+    "query_point": [28.4480, 77.5020],
+    "corridor": "Yamuna Expressway (Greater Noida Entrance)",
+    "timestamp_iso": "2026-08-19T07:55:00Z"
+  }
+}

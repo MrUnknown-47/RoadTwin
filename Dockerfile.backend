@@ -1,0 +1,51 @@
+# ==============================================================================
+# RoadTwin AI — Backend Production Dockerfile
+# Multi-stage lean Python image for FastAPI Digital Twin & Operational Intelligence
+# ==============================================================================
+
+FROM python:3.11-slim AS builder
+
+WORKDIR /app
+
+# Install system dependencies for C-extensions
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+# Final Runtime Stage
+FROM python:3.11-slim AS runner
+
+WORKDIR /app
+
+# Copy installed python packages
+COPY --from=builder /root/.local /root/.local
+ENV PATH=/root/.local/bin:$PATH
+ENV PYTHONPATH=/app/scripts
+ENV ENVIRONMENT=production
+ENV API_HOST=0.0.0.0
+ENV API_PORT=8000
+
+# Copy application scripts
+COPY scripts/ /app/scripts/
+
+# Copy only required runtime processed datasets (Excludes heavy master training datasets)
+COPY data/processed/segments/ /app/data/processed/segments/
+COPY data/processed/traffic/ /app/data/processed/traffic/
+COPY data/processed/weather/ /app/data/processed/weather/
+COPY data/processed/ml/ /app/data/processed/ml/
+COPY data/processed/osm/ /app/data/processed/osm/
+COPY data/processed/digital_twin/ /app/data/processed/digital_twin/
+
+# Expose API port
+EXPOSE 8000
+
+# Healthcheck probe
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+
+# Start Uvicorn Server
+CMD ["uvicorn", "scripts.api:app", "--host", "0.0.0.0", "--port", "8000"]

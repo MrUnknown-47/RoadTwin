@@ -1,0 +1,197 @@
+{
+  "checkpoint": "Checkpoint 04 \u2014 Historical Weather Data Ingestion & Segment Layer",
+  "nasa_power_source": {
+    "api_endpoint": "https://power.larc.nasa.gov/api/temporal/hourly/point",
+    "parameters": {
+      "T2M": "Temperature at 2 Meters (\u00b0C)",
+      "T2MDEW": "Dew/Frost Point at 2 Meters (\u00b0C)",
+      "RH2M": "Relative Humidity at 2 Meters (%)",
+      "PRECTOTCORR": "Corrected Total Precipitation Rate (mm/day rate, converted to mm/hr via rate/24)",
+      "WS10M": "Wind Speed at 10 Meters (m/s)",
+      "PS": "Surface Pressure (kPa)"
+    },
+    "spatial_resolution": "0.5\u00b0 x 0.625\u00b0 (~50 km x 60 km MERRA-2 Grid)",
+    "temporal_resolution": "Hourly (1-hour time step)",
+    "historical_coverage": "2021-01-01 to 2023-12-31 (3 Full Years = 26,280 hours per node)",
+    "direct_visibility_availability": "NOT_DIRECTLY_AVAILABLE (NASA POWER does not measure horizontal surface visibility distance in km)",
+    "derived_fog_indicator": {
+      "formula": "Dew Point Depression Delta_T = T2M - T2MDEW <= 1.0\u00b0C AND RH2M >= 95% AND WS10M <= 2.5 m/s",
+      "classification_labels": [
+        "DENSE_FOG_RISK",
+        "MODERATE_FOG_RISK",
+        "LOW_FOG_RISK",
+        "CLEAR_OR_NO_FOG"
+      ]
+    }
+  },
+  "spatial_sampling_strategy": {
+    "corridor_weather_nodes": [
+      {
+        "node_id": "WN_01_GREATER_NOIDA",
+        "name": "Greater Noida (Zero Point Anchor)",
+        "lat": 28.448,
+        "lon": 77.502,
+        "chainage_km": 0.0,
+        "region": "Gautam Buddha Nagar (Urban Interface)"
+      },
+      {
+        "node_id": "WN_02_JEWAR",
+        "name": "Jewar (Airport & Toll Anchor)",
+        "lat": 28.1465,
+        "lon": 77.585,
+        "chainage_km": 35.0,
+        "region": "Southern GB Nagar Plains"
+      },
+      {
+        "node_id": "WN_03_TAPPAL",
+        "name": "Tappal (Aligarh Border Anchor)",
+        "lat": 28.025,
+        "lon": 77.625,
+        "chainage_km": 49.5,
+        "region": "Aligarh Agricultural Belt"
+      },
+      {
+        "node_id": "WN_04_MATHURA_RAYA",
+        "name": "Mathura / Raya (Yamuna Basin Anchor)",
+        "lat": 27.568,
+        "lon": 77.785,
+        "chainage_km": 102.5,
+        "region": "Central Mathura Floodplains"
+      },
+      {
+        "node_id": "WN_05_AGRA_KUBERPUR",
+        "name": "Agra / Kuberpur (Terminus Anchor)",
+        "lat": 27.143,
+        "lon": 78.118,
+        "chainage_km": 165.0,
+        "region": "Agra Semi-Arid Plains"
+      }
+    ],
+    "total_weather_nodes": 5,
+    "distinct_underlying_merra2_grid_cells": 4,
+    "shared_grid_cells": "WN_02_JEWAR and WN_03_TAPPAL share the same 0.5\u00b0 x 0.625\u00b0 MERRA-2 grid cell",
+    "mapping_method": "NEAREST_CORRIDOR_WEATHER_NODE (Metric UTM Zone 43N Euclidean Distance)"
+  },
+  "segment_coverage_statistics": {
+    "total_segments_mapped": 405,
+    "segments_per_weather_node": {
+      "WN_04_MATHURA_RAYA": 135,
+      "WN_03_TAPPAL": 89,
+      "WN_05_AGRA_KUBERPUR": 84,
+      "WN_02_JEWAR": 60,
+      "WN_01_GREATER_NOIDA": 37
+    },
+    "distance_to_weather_node_m": {
+      "min": 454.2,
+      "max": 29558.68,
+      "mean": 11843.65,
+      "median": 10655.16
+    }
+  },
+  "raw_weather_statistics": {
+    "total_hourly_observations": 131400,
+    "total_node_days": 5475,
+    "date_range": {
+      "earliest_timestamp_utc": "2021-01-01 00:00:00",
+      "latest_timestamp_utc": "2023-12-31 23:00:00",
+      "earliest_timestamp_ist": "2021-01-01 05:30:00",
+      "latest_timestamp_ist": "2024-01-01 04:30:00"
+    }
+  },
+  "missingness_and_plausibility_audit": {
+    "temperature_c": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": -0.01,
+      "max": 48.57,
+      "mean": 25.5,
+      "median": 26.56
+    },
+    "dew_point_c": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": -15.01,
+      "max": 28.18,
+      "mean": 12.87,
+      "median": 11.99
+    },
+    "relative_humidity_pct": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 2.4,
+      "max": 100.0,
+      "mean": 52.59,
+      "median": 52.34
+    },
+    "precipitation_rate_mm_day": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 0.0,
+      "max": 271.75,
+      "mean": 2.28,
+      "median": 0.0
+    },
+    "precipitation_mm_hr": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 0.0,
+      "max": 11.32,
+      "mean": 0.09,
+      "median": 0.0
+    },
+    "wind_speed_ms": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 0.02,
+      "max": 12.47,
+      "mean": 2.82,
+      "median": 2.62
+    },
+    "surface_pressure_kpa": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 96.79,
+      "max": 100.7,
+      "mean": 98.64,
+      "median": 98.61
+    },
+    "dew_point_depression_c": {
+      "total_records": 131400,
+      "valid_records": 131400,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": -2.12,
+      "max": 50.47,
+      "mean": 12.63,
+      "median": 10.22
+    }
+  },
+  "accident_alignment_metrics": {
+    "total_accidents_aligned": 40,
+    "exact_hour_aligned_count": 40,
+    "fog_accidents_with_dense_fog_conditions": 2
+  },
+  "saved_files": {
+    "hourly_weather_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/corridor_weather_hourly_2021_2023.parquet",
+    "hourly_weather_sample_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/corridor_weather_hourly_sample.csv",
+    "segment_weather_map_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/segment_weather_spatial_mapping.gpkg",
+    "segment_weather_map_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/segment_weather_spatial_mapping.parquet",
+    "segment_weather_map_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/segment_weather_spatial_mapping.csv",
+    "accident_weather_aligned_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/accident_weather_aligned.parquet",
+    "accident_weather_aligned_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/weather/accident_weather_aligned.csv"
+  }
+}

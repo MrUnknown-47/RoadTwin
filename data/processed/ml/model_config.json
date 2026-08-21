@@ -1,0 +1,63 @@
+{
+  "model_type": "XGBClassifier",
+  "version": "3.2.0",
+  "feature_names": [
+    "is_mainline",
+    "is_ramp",
+    "is_interchange_related",
+    "chainage_start_km",
+    "length_m",
+    "lanes",
+    "maxspeed_osm_kph",
+    "hour_of_day",
+    "day_of_week",
+    "is_weekend",
+    "month",
+    "season_code",
+    "temperature_c",
+    "dew_point_c",
+    "relative_humidity_pct",
+    "precipitation_mm_hr",
+    "wind_speed_ms",
+    "surface_pressure_kpa",
+    "dew_point_depression_c",
+    "fog_risk_code",
+    "speed_kph",
+    "free_flow_speed_kph",
+    "travel_time_seconds",
+    "congestion_ratio",
+    "speed_reduction_pct",
+    "speed_excess_kph",
+    "historical_accidents_prior_30d",
+    "historical_accidents_prior_365d",
+    "historical_fatal_accidents_prior_365d",
+    "historical_fatalities_prior_365d",
+    "historical_injuries_prior_365d"
+  ],
+  "feature_count": 31,
+  "hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "scale_pos_weight": 348.83720930232556,
+    "random_state": 42
+  },
+  "risk_percentile_thresholds": {
+    "LOW_RISK": [
+      0.0,
+      70.0
+    ],
+    "MODERATE_RISK": [
+      70.0,
+      85.0
+    ],
+    "HIGH_RISK": [
+      85.0,
+      95.0
+    ],
+    "CRITICAL_RISK": [
+      95.0,
+      100.0
+    ]
+  }
+}

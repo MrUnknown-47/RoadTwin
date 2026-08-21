@@ -1,0 +1,38 @@
+{
+  "Baseline 1: Historical Frequency Ranking": {
+    "model_type": "Historical Baseline",
+    "roc_auc": 0.4845,
+    "pr_auc": 0.0011,
+    "brier_score": 0.0332,
+    "precision_top_5pct": 0.0,
+    "recall_top_5pct": 0.0,
+    "recall_top_10pct": 0.0
+  },
+  "Baseline 2: Logistic Regression (L2)": {
+    "model_type": "Linear / Logistic Regression",
+    "roc_auc": 0.6964,
+    "pr_auc": 0.0047,
+    "brier_score": 0.2018,
+    "precision_top_5pct": 0.0067,
+    "recall_top_5pct": 0.1471,
+    "recall_top_10pct": 0.3235
+  },
+  "Model 3: XGBoost Classifier": {
+    "model_type": "Gradient Boosting (XGBoost)",
+    "roc_auc": 0.6597,
+    "pr_auc": 0.0045,
+    "brier_score": 0.0077,
+    "precision_top_5pct": 0.0053,
+    "recall_top_5pct": 0.1176,
+    "recall_top_10pct": 0.2941
+  },
+  "Model 4: LightGBM Classifier": {
+    "model_type": "Gradient Boosting (LightGBM)",
+    "roc_auc": 0.6679,
+    "pr_auc": 0.0047,
+    "brier_score": 0.0108,
+    "precision_top_5pct": 0.0027,
+    "recall_top_5pct": 0.0588,
+    "recall_top_10pct": 0.2647
+  }
+}

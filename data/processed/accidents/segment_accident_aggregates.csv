@@ -1,0 +1,406 @@
+segment_id,direction,is_mainline,is_ramp,chainage_start_km,chainage_end_km,length_m,road_class,is_interchange_related,interchange_name,total_accidents,fatal_accidents,fatalities,injuries,primary_causes
+YE_MAIN_SB_001,SB,True,False,0.0,1.058,1058.239351416506,motorway,True,Greater Noida / Pari Chowk (Zero Point),0,0,0,0,None
+YE_MAIN_SB_002,SB,True,False,1.058,2.116,1058.2393514167452,motorway,True,Greater Noida / Pari Chowk (Zero Point),0,0,0,0,None
+YE_MAIN_SB_003,SB,True,False,2.116,3.175,1058.2393514166008,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_004,SB,True,False,3.175,4.233,1058.2393514165599,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_005,SB,True,False,4.233,5.291,1058.2393514162598,motorway,False,,1,0,0,3,Drunken Driving
+YE_MAIN_SB_006,SB,True,False,5.291,6.349,1058.23935141677,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_007,SB,True,False,6.349,7.348,998.1926267017178,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_008,SB,True,False,7.348,8.346,998.1926267016755,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_009,SB,True,False,8.346,9.344,998.1926267016757,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_010,SB,True,False,9.344,10.342,998.192626701708,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_011,SB,True,False,10.342,11.251,908.991581849044,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_012,SB,True,False,11.251,12.16,908.9915818488496,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_013,SB,True,False,12.16,13.069,908.9915818490057,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_014,SB,True,False,13.069,13.978,908.9915818486985,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_015,SB,True,False,13.978,14.887,908.9915818491895,motorway,False,,2,2,3,6,Fog / Poor Visibility
+YE_MAIN_SB_016,SB,True,False,14.887,16.008,1120.402240335291,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_017,SB,True,False,16.008,17.128,1120.4022403352346,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_018,SB,True,False,17.128,18.248,1120.40224033499,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_019,SB,True,False,18.248,19.471,1222.9053899336714,motorway,False,,1,1,1,5,Fog / Poor Visibility
+YE_MAIN_SB_020,SB,True,False,19.471,20.489,1017.6862962364471,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_021,SB,True,False,20.489,21.507,1017.6862962359371,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_022,SB,True,False,21.507,22.524,1017.6862962362055,motorway,False,,1,0,0,3,Rain / Hydroplaning
+YE_MAIN_SB_023,SB,True,False,22.524,23.542,1017.6862962362677,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_024,SB,True,False,23.542,24.56,1017.6862962363729,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_025,SB,True,False,24.56,25.577,1017.6862962363165,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_026,SB,True,False,25.577,26.236,659.04859727228,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_027,SB,True,False,26.236,27.316,1079.6917625921205,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_028,SB,True,False,27.316,28.396,1079.69176259234,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_029,SB,True,False,28.396,29.476,1079.6917625924268,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_030,SB,True,False,29.476,30.542,1066.7470241302497,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_031,SB,True,False,30.542,31.609,1066.747024130098,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_032,SB,True,False,31.609,31.912,303.1661964726257,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_033,SB,True,False,31.912,31.942,30.282178505001458,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_034,SB,True,False,31.942,32.403,460.82141594824327,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_035,SB,True,False,32.403,33.735,1331.8270457366086,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_036,SB,True,False,33.735,34.947,1212.1485775105552,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_037,SB,True,False,34.947,35.013,65.8656934716438,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_038,SB,True,False,35.013,36.173,1160.2143836941382,motorway,False,,1,1,1,4,Drowsy Driving
+YE_MAIN_SB_039,SB,True,False,36.173,37.124,950.7402785096752,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_040,SB,True,False,37.124,38.075,950.740278510105,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_041,SB,True,False,38.075,38.583,508.20328986221415,motorway,False,,1,1,2,3,Drowsy Driving
+YE_MAIN_SB_042,SB,True,False,38.583,39.566,983.0612001542606,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_043,SB,True,False,39.566,40.549,983.061200154317,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_044,SB,True,False,40.549,41.532,983.0612001545421,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_045,SB,True,False,41.532,42.515,983.0612001543009,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_046,SB,True,False,42.515,43.498,983.0612001541481,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_047,SB,True,False,43.498,44.481,983.0612001542509,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_048,SB,True,False,44.481,45.718,1236.1312256887577,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_049,SB,True,False,45.718,46.954,1236.1312256884487,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_050,SB,True,False,46.954,48.132,1178.217055242006,motorway,False,,1,1,1,4,Stationary Vehicle
+YE_MAIN_SB_051,SB,True,False,48.132,49.114,982.1446606356105,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_052,SB,True,False,49.114,50.096,982.1446606354597,motorway,False,,1,0,0,5,Overspeeding
+YE_MAIN_SB_053,SB,True,False,50.096,51.078,982.1446606357194,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_054,SB,True,False,51.078,52.06,982.1446606357824,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_055,SB,True,False,52.06,53.043,982.1446606356141,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_056,SB,True,False,53.043,54.025,982.1446606354633,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_057,SB,True,False,54.025,55.007,982.1446606356693,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_058,SB,True,False,55.007,55.982,975.6153937855752,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_059,SB,True,False,55.982,56.958,975.6153937854839,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_060,SB,True,False,56.958,57.934,975.6153937855763,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_061,SB,True,False,57.934,58.909,975.6153937853213,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_062,SB,True,False,58.909,59.885,975.6153937855852,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_063,SB,True,False,59.885,60.925,1040.0614399578133,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_064,SB,True,False,60.925,61.965,1040.0614399579465,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_065,SB,True,False,61.965,63.005,1040.0614399578421,motorway,False,,1,0,0,4,Drowsy Driving
+YE_MAIN_SB_066,SB,True,False,63.005,64.045,1040.0614399579365,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_067,SB,True,False,64.045,65.085,1040.0614399578196,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_068,SB,True,False,65.085,66.149,1063.8267107906363,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_069,SB,True,False,66.149,67.028,879.3599708245551,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_070,SB,True,False,67.028,67.908,879.3599708245482,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_071,SB,True,False,67.908,68.787,879.3599708245976,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_072,SB,True,False,68.787,69.667,879.3599708245501,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_073,SB,True,False,69.667,70.659,992.0670000344061,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_074,SB,True,False,70.659,71.651,992.0670000344048,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_075,SB,True,False,71.651,72.643,992.0670000345112,motorway,False,,1,0,0,1,Tyre Burst
+YE_MAIN_SB_076,SB,True,False,72.643,73.635,992.0670000340892,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_077,SB,True,False,73.635,74.627,992.0670000345302,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_078,SB,True,False,74.627,75.619,992.0670000341811,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_079,SB,True,False,75.619,76.611,992.0670000344688,motorway,False,,1,0,0,2,Tyre Burst
+YE_MAIN_SB_080,SB,True,False,76.611,77.603,992.0670000347402,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_081,SB,True,False,77.603,78.595,992.0670000343548,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_082,SB,True,False,78.595,79.587,992.0670000342203,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_083,SB,True,False,79.587,80.579,992.0670000345784,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_084,SB,True,False,80.579,81.571,992.0670000339754,motorway,False,,1,1,2,7,Fog Multi-Vehicle Crash
+YE_MAIN_SB_085,SB,True,False,81.571,82.563,992.0670000346234,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_086,SB,True,False,82.563,83.555,992.0670000344995,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_087,SB,True,False,83.555,84.548,992.067000034206,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_088,SB,True,False,84.548,85.54,992.0670000342876,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_089,SB,True,False,85.54,86.532,992.0670000346413,motorway,False,,1,1,2,4,Drowsy Driving
+YE_MAIN_SB_090,SB,True,False,86.532,87.524,992.0670000344966,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_091,SB,True,False,87.524,88.516,992.067000034297,motorway,False,,1,1,3,6,Fog Multi-Vehicle Crash
+YE_MAIN_SB_092,SB,True,False,88.516,89.508,992.067000034294,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_093,SB,True,False,89.508,90.5,992.067000034266,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_094,SB,True,False,90.5,91.492,992.0670000344383,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_095,SB,True,False,91.492,92.484,992.0670000344967,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_096,SB,True,False,92.484,93.476,992.0670000343149,motorway,False,,1,0,0,2,Tyre Burst
+YE_MAIN_SB_097,SB,True,False,93.476,94.468,992.0670000344306,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_098,SB,True,False,94.468,94.918,450.22836866992407,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_099,SB,True,False,94.918,96.021,1102.7629724061694,motorway,False,,1,1,2,6,Fog / Poor Visibility
+YE_MAIN_SB_100,SB,True,False,96.021,97.124,1102.7629724061594,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_101,SB,True,False,97.124,98.227,1102.7629724060523,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_102,SB,True,False,98.227,99.329,1102.7629724058477,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_103,SB,True,False,99.329,100.292,962.2951581629243,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_104,SB,True,False,100.292,101.254,962.2951581629516,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_105,SB,True,False,101.254,102.216,962.2951581630246,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_106,SB,True,False,102.216,103.179,962.2951581629137,motorway,False,,2,2,5,5,"Stationary Vehicle Collision, Drowsy Driving"
+YE_MAIN_SB_107,SB,True,False,103.179,104.141,962.295158162581,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_108,SB,True,False,104.141,105.103,962.2951581630787,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_109,SB,True,False,105.103,106.066,962.2951581627841,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_110,SB,True,False,106.066,107.028,962.295158162962,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_111,SB,True,False,107.028,107.719,691.2057015865377,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_112,SB,True,False,107.719,109.181,1461.9189354469315,motorway,False,,1,1,1,3,Overspeeding
+YE_MAIN_SB_113,SB,True,False,109.181,109.803,622.2240936057068,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_114,SB,True,False,109.803,110.87,1066.5484938665456,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_115,SB,True,False,110.87,111.936,1066.5484938667355,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_116,SB,True,False,111.936,113.003,1066.54849386639,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_117,SB,True,False,113.003,114.069,1066.548493867071,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_118,SB,True,False,114.069,115.136,1066.548493866426,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_119,SB,True,False,115.136,116.138,1001.6961464969527,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_120,SB,True,False,116.138,117.139,1001.6961464971785,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_121,SB,True,False,117.139,118.141,1001.6961464971869,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_122,SB,True,False,118.141,119.143,1001.6961464970395,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_123,SB,True,False,119.143,120.144,1001.6961464971008,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_124,SB,True,False,120.144,121.091,946.3924977135971,motorway,False,,1,1,1,2,Tyre Burst
+YE_MAIN_SB_125,SB,True,False,121.091,122.037,946.3924977132557,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_126,SB,True,False,122.037,122.984,946.3924977134207,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_127,SB,True,False,122.984,123.93,946.392497713503,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_128,SB,True,False,123.93,124.876,946.3924977133456,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_129,SB,True,False,124.876,125.876,999.311204809268,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_130,SB,True,False,125.876,126.875,999.3112048092349,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_131,SB,True,False,126.875,127.874,999.3112048094115,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_132,SB,True,False,127.874,128.874,999.3112048092917,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_133,SB,True,False,128.874,129.873,999.3112048090841,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_134,SB,True,False,129.873,130.875,1001.636307440942,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_135,SB,True,False,130.875,131.876,1001.6363074407017,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_136,SB,True,False,131.876,132.878,1001.6363074407844,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_137,SB,True,False,132.878,133.879,1001.6363074409403,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_138,SB,True,False,133.879,134.881,1001.636307440658,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_139,SB,True,False,134.881,135.852,970.6755519943372,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_140,SB,True,False,135.852,136.822,970.6755519941366,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_141,SB,True,False,136.822,137.793,970.6755519942108,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_142,SB,True,False,137.793,138.764,970.6755519940916,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_143,SB,True,False,138.764,139.775,1011.4749058818684,motorway,False,,1,1,3,5,Fog / Poor Visibility
+YE_MAIN_SB_144,SB,True,False,139.775,140.839,1064.1485852354597,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_145,SB,True,False,140.839,141.851,1011.4749058818437,motorway,False,,1,1,1,1,Drowsy Driving
+YE_MAIN_SB_146,SB,True,False,141.851,142.862,1011.4749058817073,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_147,SB,True,False,142.862,143.874,1011.4749058818824,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_148,SB,True,False,143.874,144.845,970.6755519942957,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_149,SB,True,False,144.845,145.856,1011.4749058818168,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_150,SB,True,False,145.856,146.92,1064.14858523526,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_151,SB,True,False,146.92,147.357,436.6187043548264,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_152,SB,True,False,147.357,147.495,138.20320599541822,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_153,SB,True,False,147.495,148.559,1064.148585235361,motorway,False,,1,1,1,2,Stationary Truck Collision
+YE_MAIN_SB_154,SB,True,False,148.559,149.623,1064.1485852354524,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_155,SB,True,False,149.623,150.073,449.85201004454257,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_156,SB,True,False,150.073,151.109,1036.1005537969122,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_157,SB,True,False,151.109,152.145,1036.100553796859,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_158,SB,True,False,152.145,152.639,493.6128094787009,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_159,SB,True,False,152.639,153.632,992.8624612560205,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_160,SB,True,False,153.632,154.625,992.8624612561154,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_161,SB,True,False,154.625,155.618,992.8624612563295,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_162,SB,True,False,155.618,156.61,992.8624612561781,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_163,SB,True,False,156.61,157.603,992.8624612560586,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_164,SB,True,False,157.603,158.596,992.8624612560922,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_165,SB,True,False,158.596,159.589,992.8624612562252,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_166,SB,True,False,159.589,160.582,992.862461255959,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_167,SB,True,False,160.582,161.728,1146.0230034191623,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_168,SB,True,False,161.728,162.874,1146.0230034193314,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_169,SB,True,False,162.874,164.02,1146.0230034193269,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_170,SB,True,False,164.02,164.832,811.8130073715699,motorway,False,,1,1,1,3,Stationary Vehicle Collision
+YE_MAIN_SB_171,SB,True,False,164.832,164.964,132.60861703438843,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_172,SB,True,False,164.964,165.884,919.3534975759025,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_173,SB,True,False,165.884,166.803,919.3534975757223,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_174,SB,True,False,166.803,167.722,919.3534975755057,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_175,SB,True,False,167.722,168.642,919.3534975760373,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_176,SB,True,False,168.642,169.561,919.353497575708,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_177,SB,True,False,169.561,170.232,670.8873155340498,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_178,SB,True,False,170.232,171.321,1088.6187702919813,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_179,SB,True,False,171.321,172.409,1088.618770291936,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_180,SB,True,False,172.409,173.025,615.5937236869455,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_181,SB,True,False,173.025,173.648,623.4094471026741,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_182,SB,True,False,173.648,174.233,584.8320882879449,motorway,False,,0,0,0,0,None
+YE_MAIN_SB_183,SB,True,False,174.233,174.499,265.6156926123638,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_001,NB,True,False,0.0,0.227,227.23206744530108,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_002,NB,True,False,0.227,0.827,599.641846711647,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_003,NB,True,False,0.827,1.45,623.4094471026741,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_004,NB,True,False,1.45,2.066,615.5937236869455,motorway,False,,1,0,0,2,Overspeeding
+YE_MAIN_NB_005,NB,True,False,2.066,2.983,916.6814287392873,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_006,NB,True,False,2.983,3.899,916.6814287394185,motorway,False,,1,0,0,2,Negligent Lane Change
+YE_MAIN_NB_007,NB,True,False,3.899,4.816,916.6814287390664,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_008,NB,True,False,4.816,5.329,512.679804095754,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_009,NB,True,False,5.329,6.37,1041.627781674419,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_010,NB,True,False,6.37,7.412,1041.6277816742074,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_011,NB,True,False,7.412,8.453,1041.6277816743923,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_012,NB,True,False,8.453,9.495,1041.6277816743857,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_013,NB,True,False,9.495,9.722,226.57516129075512,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_014,NB,True,False,9.722,10.651,929.3988760006392,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_015,NB,True,False,10.651,11.72,1068.5464080951665,motorway,False,,1,0,0,2,Rain / Slippery Road
+YE_MAIN_NB_016,NB,True,False,11.72,12.788,1068.546408095469,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_017,NB,True,False,12.788,13.857,1068.5464080951547,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_018,NB,True,False,13.857,14.817,959.8937390211647,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_019,NB,True,False,14.817,15.777,959.8937390211181,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_020,NB,True,False,15.777,16.736,959.8937390212102,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_021,NB,True,False,16.736,17.696,959.8937390213919,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_022,NB,True,False,17.696,18.656,959.893739020946,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_023,NB,True,False,18.656,19.616,959.8937390214113,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_024,NB,True,False,19.616,20.576,959.893739021139,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_025,NB,True,False,20.576,21.536,959.8937390211502,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_026,NB,True,False,21.536,22.476,939.9279986457044,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_027,NB,True,False,22.476,23.416,939.9279986456283,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_028,NB,True,False,23.416,24.356,939.9279986457075,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_029,NB,True,False,24.356,24.803,447.40008473576177,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_030,NB,True,False,24.803,25.867,1063.9917813009486,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_031,NB,True,False,25.867,26.931,1063.991781300709,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_032,NB,True,False,26.931,27.995,1063.9917813009683,motorway,False,,1,1,2,5,Fog / Poor Visibility
+YE_MAIN_NB_033,NB,True,False,27.995,28.308,312.93444388754426,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_034,NB,True,False,28.308,28.913,605.2264989983117,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_035,NB,True,False,28.913,29.887,973.3157768718643,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_036,NB,True,False,29.887,30.829,942.6515988208727,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_037,NB,True,False,30.829,31.772,942.6515988209173,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_038,NB,True,False,31.772,32.714,942.6515988208944,motorway,False,,1,1,4,8,Fog Pileup
+YE_MAIN_NB_039,NB,True,False,32.714,33.657,942.6515988208503,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_040,NB,True,False,33.657,34.721,1063.9917813008506,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_041,NB,True,False,34.721,35.664,942.65159882085,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_042,NB,True,False,35.664,36.637,973.3157768720765,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_043,NB,True,False,36.637,37.61,973.3157768719313,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_044,NB,True,False,37.61,38.584,973.315776871942,motorway,False,,1,1,1,1,Drowsy Driving
+YE_MAIN_NB_045,NB,True,False,38.584,39.557,973.3157768719173,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_046,NB,True,False,39.557,40.561,1003.7279673265957,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_047,NB,True,False,40.561,41.564,1003.7279673265396,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_048,NB,True,False,41.564,42.568,1003.7279673267982,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_049,NB,True,False,42.568,43.572,1003.7279673263183,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_050,NB,True,False,43.572,44.576,1003.7279673267099,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_051,NB,True,False,44.576,45.573,997.6264757150833,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_052,NB,True,False,45.573,46.571,997.6264757149443,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_053,NB,True,False,46.571,47.569,997.6264757150976,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_054,NB,True,False,47.569,48.566,997.6264757149883,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_055,NB,True,False,48.566,49.564,997.6264757149518,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_056,NB,True,False,49.564,50.513,948.843027499983,motorway,False,,1,1,2,2,Overspeeding
+YE_MAIN_NB_057,NB,True,False,50.513,51.461,948.8430275002238,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_058,NB,True,False,51.461,52.41,948.8430275001574,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_059,NB,True,False,52.41,53.359,948.8430274999934,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_060,NB,True,False,53.359,54.308,948.8430274999885,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_061,NB,True,False,54.308,55.311,1002.856745900044,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_062,NB,True,False,55.311,56.314,1002.8567459004435,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_063,NB,True,False,56.314,57.317,1002.8567459001639,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_064,NB,True,False,57.317,58.319,1002.8567459001223,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_065,NB,True,False,58.319,59.322,1002.8567458999607,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_066,NB,True,False,59.322,60.387,1064.8067802381522,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_067,NB,True,False,60.387,61.452,1064.8067802383266,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_068,NB,True,False,61.452,62.517,1064.8067802381838,motorway,False,,1,0,0,4,Overspeeding
+YE_MAIN_NB_069,NB,True,False,62.517,63.582,1064.8067802381943,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_070,NB,True,False,63.582,64.646,1064.8067802384169,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_071,NB,True,False,64.646,65.268,621.9491439208198,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_072,NB,True,False,65.268,66.197,928.4785813014184,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_073,NB,True,False,66.197,66.954,757.0989028975215,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_074,NB,True,False,66.954,67.711,757.0989028979319,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_075,NB,True,False,67.711,68.753,1042.0576677829745,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_076,NB,True,False,68.753,69.795,1042.0576677826828,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_077,NB,True,False,69.795,70.837,1042.0576677831286,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_078,NB,True,False,70.837,71.879,1042.057667783116,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_079,NB,True,False,71.879,72.921,1042.057667782772,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_080,NB,True,False,72.921,73.963,1042.0576677829476,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_081,NB,True,False,73.963,74.49,526.5762888043585,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_082,NB,True,False,74.49,75.124,633.639770019957,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_083,NB,True,False,75.124,76.228,1104.2847458000049,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_084,NB,True,False,76.228,77.332,1104.2847457995244,motorway,False,,1,1,2,1,Drunken Driving
+YE_MAIN_NB_085,NB,True,False,77.332,78.436,1104.2847457996813,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_086,NB,True,False,78.436,79.541,1104.2847457999223,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_087,NB,True,False,79.541,79.99,449.5433874816924,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_088,NB,True,False,79.99,80.981,991.0468948115331,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_089,NB,True,False,80.981,81.972,991.0468948121159,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_090,NB,True,False,81.972,82.963,991.0468948116546,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_091,NB,True,False,82.963,83.954,991.0468948116245,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_092,NB,True,False,83.954,84.945,991.046894811961,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_093,NB,True,False,84.945,85.936,991.0468948117307,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_094,NB,True,False,85.936,86.928,991.0468948116915,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_095,NB,True,False,86.928,87.919,991.0468948116047,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_096,NB,True,False,87.919,88.91,991.0468948119797,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_097,NB,True,False,88.91,89.901,991.046894811497,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_098,NB,True,False,89.901,90.892,991.0468948119017,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_099,NB,True,False,90.892,91.883,991.0468948118478,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_100,NB,True,False,91.883,92.874,991.0468948115259,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_101,NB,True,False,92.874,93.865,991.0468948119055,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_102,NB,True,False,93.865,94.856,991.0468948115188,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_103,NB,True,False,94.856,95.847,991.0468948120049,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_104,NB,True,False,95.847,96.838,991.046894811499,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_105,NB,True,False,96.838,97.829,991.0468948117004,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_106,NB,True,False,97.829,98.82,991.0468948118659,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_107,NB,True,False,98.82,99.811,991.0468948119518,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_108,NB,True,False,99.811,100.802,991.0468948117182,motorway,False,,1,0,0,1,Tyre Burst
+YE_MAIN_NB_109,NB,True,False,100.802,101.793,991.0468948115163,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_110,NB,True,False,101.793,102.784,991.0468948119214,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_111,NB,True,False,102.784,103.775,991.0468948117556,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_112,NB,True,False,103.775,104.766,991.0468948117484,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_113,NB,True,False,104.766,105.606,840.0755979308713,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_114,NB,True,False,105.606,106.447,840.0755979308323,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_115,NB,True,False,106.447,107.287,840.075597931009,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_116,NB,True,False,107.287,108.324,1036.9053245412535,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_117,NB,True,False,108.324,109.358,1034.8810119611437,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_118,NB,True,False,109.358,110.399,1040.743423777761,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_119,NB,True,False,110.399,111.44,1040.7434237778536,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_120,NB,True,False,111.44,112.481,1040.74342377786,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_121,NB,True,False,112.481,113.521,1040.7434237777554,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_122,NB,True,False,113.521,114.562,1040.7434237779528,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_123,NB,True,False,114.562,115.539,977.3362214437973,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_124,NB,True,False,115.539,116.517,977.3362214437874,motorway,False,,1,1,1,1,Stationary Vehicle Collision
+YE_MAIN_NB_125,NB,True,False,116.517,117.494,977.3362214437748,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_126,NB,True,False,117.494,118.471,977.3362214436554,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_127,NB,True,False,118.471,119.449,977.3362214440247,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_128,NB,True,False,119.449,120.432,982.7625782650096,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_129,NB,True,False,120.432,121.414,982.7625782654897,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_130,NB,True,False,121.414,122.397,982.7625782649284,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_131,NB,True,False,122.397,123.38,982.7625782650141,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_132,NB,True,False,123.38,124.363,982.7625782653353,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_133,NB,True,False,124.363,125.345,982.7625782651915,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_134,NB,True,False,125.345,126.328,982.7625782651561,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_135,NB,True,False,126.328,127.498,1170.2091457938386,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_136,NB,True,False,127.498,128.73,1231.2941572951831,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_137,NB,True,False,128.73,129.961,1231.294157295148,motorway,False,,1,0,0,4,Drowsy Driving
+YE_MAIN_NB_138,NB,True,False,129.961,130.947,986.4353926770564,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_139,NB,True,False,130.947,131.934,986.4353926768167,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_140,NB,True,False,131.934,132.92,986.4353926770424,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_141,NB,True,False,132.92,133.907,986.4353926769307,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_142,NB,True,False,133.907,134.893,986.435392676732,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_143,NB,True,False,134.893,135.88,986.435392677138,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_144,NB,True,False,135.88,136.382,502.09355281030315,motorway,False,,1,1,1,2,Fog / Poor Visibility
+YE_MAIN_NB_145,NB,True,False,136.382,137.297,915.6226909025146,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_146,NB,True,False,137.297,138.213,915.6226909028692,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_147,NB,True,False,138.213,139.032,819.2231458469874,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_148,NB,True,False,139.032,139.851,819.2231458465706,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_149,NB,True,False,139.851,140.972,1120.3057204036588,motorway,False,,1,0,0,3,Overspeeding
+YE_MAIN_NB_150,NB,True,False,140.972,142.092,1120.3057204038241,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_151,NB,True,False,142.092,142.509,416.76521995593635,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_152,NB,True,False,142.509,142.543,34.14635791083763,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_153,NB,True,False,142.543,142.847,304.1818724563921,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_154,NB,True,False,142.847,143.914,1066.7978247731965,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_155,NB,True,False,143.914,144.981,1066.797824772888,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_156,NB,True,False,144.981,146.06,1079.4581480303898,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_157,NB,True,False,146.06,147.14,1079.458148030742,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_158,NB,True,False,147.14,148.219,1079.45814803065,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_159,NB,True,False,148.219,148.878,659.4416559665995,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_160,NB,True,False,148.878,149.895,1016.9026156309251,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_161,NB,True,False,149.895,150.912,1016.9026156308958,motorway,False,,1,1,1,2,Fog / Poor Visibility
+YE_MAIN_NB_162,NB,True,False,150.912,151.929,1016.9026156308367,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_163,NB,True,False,151.929,152.946,1016.9026156311791,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_164,NB,True,False,152.946,153.963,1016.902615630705,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_165,NB,True,False,153.963,154.98,1016.902615631022,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_166,NB,True,False,154.98,156.133,1152.6643196308758,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_167,NB,True,False,156.133,157.285,1152.6643196312132,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_168,NB,True,False,157.285,158.483,1197.7283884710578,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_169,NB,True,False,158.483,159.681,1197.7283884711323,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_170,NB,True,False,159.681,160.73,1049.5863277176325,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_171,NB,True,False,160.73,161.78,1049.5863277178219,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_172,NB,True,False,161.78,162.829,1049.586327717981,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_173,NB,True,False,162.829,163.934,1104.5081228854924,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_174,NB,True,False,163.934,165.038,1104.5081228860963,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_175,NB,True,False,165.038,166.143,1104.5081228856045,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_176,NB,True,False,166.143,167.247,1104.5081228856432,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_177,NB,True,False,167.247,168.272,1024.767681684918,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_178,NB,True,False,168.272,169.297,1024.7676816852997,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_179,NB,True,False,169.297,170.322,1024.767681685061,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_180,NB,True,False,170.322,171.346,1024.7676816850146,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_181,NB,True,False,171.346,172.371,1024.7676816851144,motorway,False,,0,0,0,0,None
+YE_MAIN_NB_182,NB,True,False,172.371,173.396,1024.767681685445,motorway,True,Greater Noida / Pari Chowk (Zero Point),0,0,0,0,None
+YE_MAIN_NB_183,NB,True,False,173.396,174.421,1024.7676816849403,motorway,True,Greater Noida / Pari Chowk (Zero Point),0,0,0,0,None
+YE_RAMP_001,NB,False,True,,,463.48460717311843,motorway_link,True,Eastern Peripheral Expressway (EPE) Interchange,0,0,0,0,None
+YE_RAMP_002,SB,False,True,,,655.9288397127707,motorway_link,True,Eastern Peripheral Expressway (EPE) Interchange,0,0,0,0,None
+YE_RAMP_003,SB,False,True,,,144.76203064341453,motorway_link,True,Eastern Peripheral Expressway (EPE) Interchange,0,0,0,0,None
+YE_RAMP_004,NB,False,True,,,419.78452552842055,motorway_link,True,Eastern Peripheral Expressway (EPE) Interchange,0,0,0,0,None
+YE_RAMP_005,SB,False,True,,,745.6067305990085,motorway_link,True,Eastern Peripheral Expressway (EPE) Interchange,0,0,0,0,None
+YE_RAMP_006,NB,False,True,,,1293.3116920663017,motorway_link,True,Jewar / Noida International Airport Interchange,0,0,0,0,None
+YE_RAMP_007,NB,False,True,,,52.201700317247315,motorway_link,True,Jewar / Noida International Airport Interchange,0,0,0,0,None
+YE_RAMP_008,NB,False,True,,,13.988336726209235,motorway_link,True,Jewar / Noida International Airport Interchange,0,0,0,0,None
+YE_RAMP_009,NB,False,True,,,494.75744680739996,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_010,NB,False,True,,,45.81709701543812,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_011,NB,False,True,,,32.53746460727328,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_012,NB,False,True,,,8.284788492550046,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_013,NB,False,True,,,9.446524339254555,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_014,NB,False,True,,,41.9920708109167,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_015,SB,False,True,,,858.260322283733,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_016,NB,False,True,,,83.97312808623803,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_017,NB,False,True,,,68.5180029598875,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_018,SB,False,True,,,27.670241931852992,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_019,SB,False,True,,,41.80671406463937,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_020,SB,False,True,,,7.982204653309562,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_021,SB,False,True,,,8.397485999714096,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_022,SB,False,True,,,34.39008311080155,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_023,SB,False,True,,,36.20380767209378,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_024,NB,False,True,,,1010.598979114836,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_025,SB,False,True,,,554.4435830504187,motorway_link,True,Tappal / Aligarh (SH-22) Interchange,0,0,0,0,None
+YE_RAMP_026,NB,False,True,,,530.0273436299967,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_027,NB,False,True,,,265.36535169615956,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_028,SB,False,True,,,294.4247728359307,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_029,SB,False,True,,,27.974347531976704,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_030,SB,False,True,,,86.68032335706636,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_031,NB,False,True,,,696.5275203360715,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_032,SB,False,True,,,294.9212520369454,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_033,NB,False,True,,,546.6052611311733,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_034,NB,False,True,,,865.1038196026007,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_035,SB,False,True,,,947.7483996589584,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_036,SB,False,True,,,941.4199003498527,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_037,NB,False,True,,,974.8491624123085,motorway_link,True,Raya / Mathura-Vrindavan Interchange,0,0,0,0,None
+YE_RAMP_038,NB,False,True,,,2733.390832624002,"['motorway_link', 'motorway']",True,Agra / Kuberpur (NH-19 Terminus),0,0,0,0,None
+YE_RAMP_039,SB,False,True,,,2715.1526635124233,"['motorway_link', 'motorway']",True,Agra / Kuberpur (NH-19 Terminus),0,0,0,0,None

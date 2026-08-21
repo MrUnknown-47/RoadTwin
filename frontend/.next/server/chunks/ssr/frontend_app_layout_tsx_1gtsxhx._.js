@@ -1,0 +1,3 @@
+module.exports=[44210,a=>{"use strict";var b=a.i(18332);a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"en",className:"dark",children:(0,b.jsx)("body",{className:"bg-[#0B1120] text-slate-100 min-h-screen antialiased",children:a})})},"metadata",0,{title:"RoadTwin AI — Highway Safety Digital Twin Command Center",description:"Dynamic AI-powered digital twin for real-time accident prevention & emergency mobility on Yamuna Expressway."}])},77451,function(a){a.n(a.i(44210))}];
+
+//# sourceMappingURL=frontend_app_layout_tsx_1gtsxhx._.js.map

@@ -1,0 +1,196 @@
+{
+  "checkpoint": "Checkpoint 07 \u2014 Accident Risk Modeling, Target Formulation & SHAP Explainability",
+  "selected_target": {
+    "name": "Candidate B (Forward 3-Hour Accident Occurrence: target_3h)",
+    "horizon_hours": 3,
+    "operational_justification": "Optimal lead time for highway patrol deployment and dynamic speed limit alerts on VMS before incident occurrence."
+  },
+  "candidate_target_comparison": {
+    "Candidate A (1-Hour Forward: target_1h)": {
+      "horizon_hours": 1,
+      "total_positive_segment_hours": 40,
+      "total_negative_segment_hours": 10643360,
+      "positive_rate_percent": 0.000376,
+      "positive_by_year": {
+        "2021": 15,
+        "2022": 13,
+        "2023": 12
+      },
+      "unique_positive_segments": 38,
+      "operational_justification": "Too narrow lead time for patrol dispatch."
+    },
+    "Candidate B (3-Hour Forward: target_3h)": {
+      "horizon_hours": 3,
+      "total_positive_segment_hours": 120,
+      "total_negative_segment_hours": 10643280,
+      "positive_rate_percent": 0.001127,
+      "positive_by_year": {
+        "2021": 45,
+        "2022": 39,
+        "2023": 36
+      },
+      "unique_positive_segments": 38,
+      "operational_justification": "Optimal operational pre-emption lead time for highway patrol and VMS warnings."
+    },
+    "Candidate C (6-Hour Forward: target_6h)": {
+      "horizon_hours": 6,
+      "total_positive_segment_hours": 240,
+      "total_negative_segment_hours": 10643160,
+      "positive_rate_percent": 0.002255,
+      "positive_by_year": {
+        "2021": 90,
+        "2022": 78,
+        "2023": 72
+      },
+      "unique_positive_segments": 38,
+      "operational_justification": "Too diffuse temporal specificity."
+    }
+  },
+  "chronological_splits": {
+    "train_period": "2021-01-01 to 2021-12-31",
+    "train_rows": 15043,
+    "train_positives": 43,
+    "val_period": "2022-01-01 to 2022-12-31",
+    "val_rows": 15036,
+    "val_positives": 37,
+    "test_period": "2023-01-01 to 2023-12-31",
+    "test_rows": 15034,
+    "test_positives": 34
+  },
+  "model_performance_comparison": {
+    "Baseline 1: Historical Frequency Ranking": {
+      "model_type": "Historical Baseline",
+      "roc_auc": 0.4845,
+      "pr_auc": 0.0011,
+      "brier_score": 0.0332,
+      "precision_top_5pct": 0.0,
+      "recall_top_5pct": 0.0,
+      "recall_top_10pct": 0.0
+    },
+    "Baseline 2: Logistic Regression (L2)": {
+      "model_type": "Linear / Logistic Regression",
+      "roc_auc": 0.6964,
+      "pr_auc": 0.0047,
+      "brier_score": 0.2018,
+      "precision_top_5pct": 0.0067,
+      "recall_top_5pct": 0.1471,
+      "recall_top_10pct": 0.3235
+    },
+    "Model 3: XGBoost Classifier": {
+      "model_type": "Gradient Boosting (XGBoost)",
+      "roc_auc": 0.6597,
+      "pr_auc": 0.0045,
+      "brier_score": 0.0077,
+      "precision_top_5pct": 0.0053,
+      "recall_top_5pct": 0.1176,
+      "recall_top_10pct": 0.2941
+    },
+    "Model 4: LightGBM Classifier": {
+      "model_type": "Gradient Boosting (LightGBM)",
+      "roc_auc": 0.6679,
+      "pr_auc": 0.0047,
+      "brier_score": 0.0108,
+      "precision_top_5pct": 0.0027,
+      "recall_top_5pct": 0.0588,
+      "recall_top_10pct": 0.2647
+    }
+  },
+  "ablation_study": [
+    {
+      "configuration": "Model A: Weather Only (8 features)",
+      "feature_count": 8,
+      "roc_auc": 0.4857,
+      "pr_auc": 0.002,
+      "precision_top_5pct": 0.0,
+      "recall_top_5pct": 0.0,
+      "recall_top_10pct": 0.0294
+    },
+    {
+      "configuration": "Model B: Weather + Traffic (14 features)",
+      "feature_count": 14,
+      "roc_auc": 0.6821,
+      "pr_auc": 0.0036,
+      "precision_top_5pct": 0.0053,
+      "recall_top_5pct": 0.1176,
+      "recall_top_10pct": 0.2059
+    },
+    {
+      "configuration": "Model C: Weather + Traffic + Road (21 features)",
+      "feature_count": 26,
+      "roc_auc": 0.6306,
+      "pr_auc": 0.004,
+      "precision_top_5pct": 0.008,
+      "recall_top_5pct": 0.1765,
+      "recall_top_10pct": 0.2353
+    },
+    {
+      "configuration": "Model D: Full Multi-Source Fusion (27 features)",
+      "feature_count": 31,
+      "roc_auc": 0.6273,
+      "pr_auc": 0.004,
+      "precision_top_5pct": 0.008,
+      "recall_top_5pct": 0.1765,
+      "recall_top_10pct": 0.2353
+    }
+  ],
+  "top_predictive_features_shap": [
+    {
+      "feature": "length_m",
+      "mean_absolute_shap": 0.8067273497581482
+    },
+    {
+      "feature": "chainage_start_km",
+      "mean_absolute_shap": 0.6587151885032654
+    },
+    {
+      "feature": "dew_point_c",
+      "mean_absolute_shap": 0.5519666075706482
+    },
+    {
+      "feature": "congestion_ratio",
+      "mean_absolute_shap": 0.48230183124542236
+    },
+    {
+      "feature": "day_of_week",
+      "mean_absolute_shap": 0.44476082921028137
+    },
+    {
+      "feature": "wind_speed_ms",
+      "mean_absolute_shap": 0.4444253742694855
+    },
+    {
+      "feature": "precipitation_mm_hr",
+      "mean_absolute_shap": 0.3931361138820648
+    },
+    {
+      "feature": "hour_of_day",
+      "mean_absolute_shap": 0.32819876074790955
+    },
+    {
+      "feature": "surface_pressure_kpa",
+      "mean_absolute_shap": 0.314108669757843
+    },
+    {
+      "feature": "free_flow_speed_kph",
+      "mean_absolute_shap": 0.26995739340782166
+    }
+  ],
+  "hotspot_summary": {
+    "total_segments_ranked": 405,
+    "critical_risk_segments": 21,
+    "high_risk_segments": 40,
+    "moderate_risk_segments": 61,
+    "low_risk_segments": 283
+  },
+  "saved_files": {
+    "training_dataset_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/training_dataset.parquet",
+    "feature_importance_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/feature_importance.csv",
+    "ablation_study_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/ablation_study_results.csv",
+    "hotspot_rankings_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/segment_hotspot_rankings.parquet",
+    "hotspot_rankings_csv": "/Users/vaibhavsingh/RoadTwin/data/processed/ml/segment_hotspot_rankings.csv",
+    "shap_global_png": "/Users/vaibhavsingh/RoadTwin/outputs/shap_global_summary.png",
+    "shap_local_png": "/Users/vaibhavsingh/RoadTwin/outputs/shap_local_examples.png",
+    "hotspot_map_png": "/Users/vaibhavsingh/RoadTwin/outputs/corridor_risk_hotspot_map.png",
+    "evaluation_curves_png": "/Users/vaibhavsingh/RoadTwin/outputs/model_evaluation_curves.png"
+  }
+}

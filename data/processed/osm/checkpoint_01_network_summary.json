@@ -1,0 +1,214 @@
+{
+  "corridor": "Yamuna Expressway (Greater Noida to Agra)",
+  "expected_baseline_corridor_length_km": 165.0,
+  "layer_a_statistics": {
+    "name": "Layer A \u2014 Yamuna Expressway Isolated",
+    "nodes_count": 148,
+    "edges_count": 153,
+    "crs": "EPSG:4326 (WGS 84)",
+    "projected_metric_crs": "EPSG:32643 (UTM Zone 43N)",
+    "bounding_box": {
+      "min_longitude": 77.4984306,
+      "min_latitude": 27.1140587,
+      "max_longitude": 78.1207688,
+      "max_latitude": 28.4479781
+    },
+    "total_approx_road_length_km": 367.99,
+    "weakly_connected_components": 4,
+    "largest_wcc_size": 68,
+    "strongly_connected_components": 146,
+    "largest_scc_size": 2,
+    "highway_classifications": {
+      "motorway": 114,
+      "motorway_link": 37,
+      "['motorway_link', 'motorway']": 2
+    },
+    "lanes_distribution": {
+      "3": 118,
+      "nan": 31,
+      "2": 4
+    },
+    "maxspeed_distribution": {
+      "100": 100,
+      "nan": 45,
+      "120": 8
+    },
+    "oneway_distribution": {
+      "True": 149,
+      "False": 4
+    }
+  },
+  "layer_b_statistics": {
+    "name": "Layer B \u2014 Corridor Routing Network",
+    "nodes_count": 1863,
+    "edges_count": 3461,
+    "crs": "EPSG:4326 (WGS 84)",
+    "projected_metric_crs": "EPSG:32643 (UTM Zone 43N)",
+    "bounding_box": {
+      "min_longitude": 77.4346116,
+      "min_latitude": 27.0317576,
+      "max_longitude": 78.2894825,
+      "max_latitude": 28.5024169
+    },
+    "total_approx_road_length_km": 3674.69,
+    "weakly_connected_components": 15,
+    "largest_wcc_size": 1823,
+    "strongly_connected_components": 148,
+    "largest_scc_size": 1692,
+    "highway_classifications": {
+      "tertiary": 2030,
+      "secondary": 494,
+      "trunk": 252,
+      "motorway_link": 188,
+      "motorway": 166,
+      "tertiary_link": 112,
+      "trunk_link": 110,
+      "primary": 52,
+      "secondary_link": 43,
+      "['tertiary_link', 'tertiary']": 4,
+      "['motorway_link', 'motorway']": 4,
+      "primary_link": 3,
+      "['trunk', 'tertiary']": 2,
+      "['motorway_link', 'trunk_link']": 1
+    },
+    "lanes_distribution": {
+      "nan": 2831,
+      "2": 371,
+      "3": 243,
+      "1": 14,
+      "['2', '3']": 1,
+      "['1', '2']": 1
+    },
+    "maxspeed_distribution": {
+      "nan": 3169,
+      "100": 118,
+      "50": 91,
+      "80": 44,
+      "120": 16,
+      "60": 14,
+      "['100', '80']": 3,
+      "['80', '100']": 3,
+      "['40', '100']": 1,
+      "['50', '100']": 1,
+      "['120', '100']": 1
+    },
+    "oneway_distribution": {
+      "True": 1855,
+      "False": 1606
+    }
+  },
+  "layer_a_quality": {
+    "name": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 153
+    },
+    "ref": {
+      "present": false,
+      "missing_count": 153,
+      "missing_pct": 100.0,
+      "valid_count": 0
+    },
+    "highway": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 153
+    },
+    "lanes": {
+      "present": true,
+      "missing_count": 31,
+      "missing_pct": 20.26,
+      "valid_count": 122
+    },
+    "maxspeed": {
+      "present": true,
+      "missing_count": 45,
+      "missing_pct": 29.41,
+      "valid_count": 108
+    },
+    "oneway": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 153
+    },
+    "geometry": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 153
+    },
+    "length": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 153
+    }
+  },
+  "layer_b_quality": {
+    "name": {
+      "present": true,
+      "missing_count": 3011,
+      "missing_pct": 87.0,
+      "valid_count": 450
+    },
+    "ref": {
+      "present": true,
+      "missing_count": 3076,
+      "missing_pct": 88.88,
+      "valid_count": 385
+    },
+    "highway": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 3461
+    },
+    "lanes": {
+      "present": true,
+      "missing_count": 2831,
+      "missing_pct": 81.8,
+      "valid_count": 630
+    },
+    "maxspeed": {
+      "present": true,
+      "missing_count": 3169,
+      "missing_pct": 91.56,
+      "valid_count": 292
+    },
+    "oneway": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 3461
+    },
+    "geometry": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 3461
+    },
+    "length": {
+      "present": true,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "valid_count": 3461
+    }
+  },
+  "saved_files": {
+    "layer_a": {
+      "graphml": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_expressway_layer_a.graphml",
+      "nodes_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_expressway_layer_a_nodes.gpkg",
+      "edges_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_expressway_layer_a_edges.gpkg",
+      "edges_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_expressway_layer_a_edges.parquet"
+    },
+    "layer_b": {
+      "graphml": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_routing.graphml",
+      "nodes_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_nodes.gpkg",
+      "edges_gpkg": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_edges.gpkg",
+      "edges_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/osm/yamuna_corridor_layer_b_edges.parquet"
+    }
+  }
+}

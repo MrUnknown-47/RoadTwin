@@ -1,0 +1,47 @@
+{
+  "checkpoint": "Checkpoint 08 \u2014 Dynamic Digital Twin State Engine, Incident Simulation & Emergency Routing",
+  "timestamp": "2026-08-19T23:40:25.623123",
+  "digital_twin_state": {
+    "total_corridor_segments": 405,
+    "mode": "BASELINE_DEMONSTRATION",
+    "mean_corridor_risk_score": 0.0087,
+    "critical_risk_segments_count": 20
+  },
+  "demonstration_scenario": {
+    "incident_segment_id": "YE_MAIN_SB_050",
+    "incident_type": "ACCIDENT",
+    "severity": "CRITICAL",
+    "chainage_km": 46.95,
+    "speed_before_kph": 96.8,
+    "speed_after_kph": 19.4,
+    "speed_reduction_pct": 80.0,
+    "delay_seconds": 174.8,
+    "affected_segments_count": 5,
+    "affected_segments": [
+      "YE_MAIN_SB_050",
+      "YE_MAIN_SB_048",
+      "YE_MAIN_SB_049",
+      "YE_MAIN_SB_051",
+      "YE_MAIN_SB_052"
+    ]
+  },
+  "emergency_dispatch": {
+    "assigned_depot": "Tappal / Aligarh Cut Emergency Station",
+    "depot_type": "SIMULATION_DEPOT",
+    "eta_minutes": 0.0,
+    "dispatch_distance_km": 0.0,
+    "status": "DISPATCH_ROUTE_FOUND"
+  },
+  "routing_and_diversion": {
+    "origin_node": "1803900020",
+    "dest_node": "11881660640",
+    "baseline_travel_time_min": 112.03,
+    "corridor_distance_km": 177.38
+  },
+  "saved_files": {
+    "simulation_results_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/digital_twin/simulation_results.parquet",
+    "emergency_routes_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/digital_twin/emergency_routes.parquet",
+    "mapping_parquet": "/Users/vaibhavsingh/RoadTwin/data/processed/digital_twin/segment_graph_edge_mapping.parquet",
+    "preflight_json": "/Users/vaibhavsingh/RoadTwin/data/processed/digital_twin/checkpoint_08_preflight.json"
+  }
+}

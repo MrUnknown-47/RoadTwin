@@ -1,0 +1,328 @@
+{
+  "checkpoint": "Checkpoint 12 \u2014 Final SIH 2026 Validation",
+  "timestamp": "2026-08-19T20:37:08",
+  "total_suites_executed": 5,
+  "total_tests_executed": 68,
+  "total_passed": 68,
+  "total_failed": 0,
+  "pass_rate_percent": 100.0,
+  "suites": {
+    "CP08 Dynamic Digital Twin & Routing": {
+      "tests_executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "duration_seconds": 0.519,
+      "status": "PASS",
+      "details": {
+        "TEST 1 \u2014 Load Layer B graph successfully": {
+          "status": "PASS",
+          "result": "Layer B graph loaded: 1863 nodes, 3461 edges."
+        },
+        "TEST 2 \u2014 Load all 405 RoadTwin segments": {
+          "status": "PASS",
+          "result": "405 standardized segments confirmed (366 mainline, 39 ramps)."
+        },
+        "TEST 3 \u2014 Validate segment -> graph mapping": {
+          "status": "PASS",
+          "result": "100.0% topological mapping verified: All 405 segments mapped to Layer B graph edges."
+        },
+        "TEST 4 \u2014 Validate directed connectivity": {
+          "status": "PASS",
+          "result": "Directed graph confirmed: Strict carriageway separation maintained (201 SB, 204 NB)."
+        },
+        "TEST 5 \u2014 Baseline routing works": {
+          "status": "PASS",
+          "result": "Greater Noida -> Agra path computed: 177.08 km, 111.84 min."
+        },
+        "TEST 6 \u2014 Blocked segment is never selected": {
+          "status": "PASS",
+          "result": "Blockage enforcement verified: Blocked edges receive infinite cost weight and are pruned from traversal."
+        },
+        "TEST 7 \u2014 Incident simulation changes network state": {
+          "status": "PASS",
+          "result": "Simulation state change confirmed: Speed 96.8 -> 19.4 km/h, Delay=174.8s."
+        },
+        "TEST 8 \u2014 Alternative route differs from baseline when required": {
+          "status": "PASS",
+          "result": "Diversion comparison engine operational: Correctly identifies baseline vs post-incident travel impacts."
+        },
+        "TEST 9 \u2014 Emergency route avoids blocked edges": {
+          "status": "PASS",
+          "result": "Emergency dispatch verified: Nearest Depot=Tappal / Aligarh Cut Emergency Station, ETA=14.56 min."
+        },
+        "TEST 10 \u2014 No-route condition is handled safely": {
+          "status": "PASS",
+          "result": "Graceful failure handling verified: Returns structured NO_ROUTE_AVAILABLE without unhandled exception."
+        },
+        "TEST 11 \u2014 Risk engine loads CP07 model": {
+          "status": "PASS",
+          "result": "CP07 XGBoost model loaded with 31 validated features."
+        },
+        "TEST 12 \u2014 Risk inference returns valid relative risk output": {
+          "status": "PASS",
+          "result": "Relative risk bounds confirmed: All risk_scores in [0.0, 1.0] and categories in 4-tier schema."
+        },
+        "TEST 13 \u2014 Baseline mode works without API keys": {
+          "status": "PASS",
+          "result": "Zero-dependency baseline mode confirmed: Generates complete 405-segment state without external API calls."
+        },
+        "TEST 14 \u2014 Live traffic absence is handled explicitly": {
+          "status": "PASS",
+          "result": "Explicit provenance labeling confirmed: Live traffic status reported as MOCK_OR_UNAVAILABLE."
+        },
+        "TEST 15 \u2014 Simulation is deterministic": {
+          "status": "PASS",
+          "result": "Deterministic execution verified: Exact risk score equivalence confirmed (0.007199999876320362 == 0.007199999876320362)."
+        },
+        "TEST 16 \u2014 No fabricated emergency depot coordinates exist": {
+          "status": "PASS",
+          "result": "Technical honesty verified: All 6 response bases explicitly labeled as SIMULATION_DEPOT."
+        }
+      }
+    },
+    "CP09 Phase 1 Interactive Command Center": {
+      "tests_executed": 6,
+      "passed": 6,
+      "failed": 0,
+      "duration_seconds": 0.111,
+      "status": "PASS",
+      "details": {
+        "TEST 1 \u2014 Frontend Structure & Next.js Build": {
+          "status": "PASS",
+          "result": "Next.js 15 App Router scaffold and production build (.next) verified."
+        },
+        "TEST 2 \u2014 405-Segment GeoJSON Asset": {
+          "status": "PASS",
+          "result": "405 GeoJSON features verified (201 SB, 204 NB, 39 Ramps)."
+        },
+        "TEST 3 \u2014 FastAPI /health Connectivity": {
+          "status": "PASS",
+          "result": "FastAPI healthy: 405 segments, 1863 nodes, 3461 edges."
+        },
+        "TEST 4 \u2014 Digital Twin State Array": {
+          "status": "PASS",
+          "result": "Returned full state array for all 405 segments with risk categories."
+        },
+        "TEST 5 \u2014 Key Segment Telemetry Validation": {
+          "status": "PASS",
+          "result": "YE_MAIN_SB_015, YE_MAIN_SB_050, YE_MAIN_SB_080 telemetry verified."
+        },
+        "TEST 6 \u2014 Provenance & Risk Classification": {
+          "status": "PASS",
+          "result": "Provenance tags and 4-tier relative risk categories verified."
+        }
+      }
+    },
+    "CP09 Phase 2 Incident Simulation & Dispatch UI": {
+      "tests_executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "duration_seconds": 0.346,
+      "status": "PASS",
+      "details": {
+        "TEST 1 \u2014 Incident Simulation (YE_MAIN_SB_050)": {
+          "status": "PASS",
+          "result": "Speed: 96.8 -> 19.4 km/h (-80.0%), Risk: 0.05689999833703041 -> 0.1422."
+        },
+        "TEST 2 \u2014 Diversion Routing Evaluation": {
+          "status": "PASS",
+          "result": "Baseline: 111.84m (177.08km), Post-Incident: 112.03m, Delay: +0.19m."
+        },
+        "TEST 3 \u2014 Emergency Dispatch (YE_MAIN_SB_050)": {
+          "status": "PASS",
+          "result": "Assigned: Tappal / Aligarh Cut Emergency Station [SIMULATION_DEPOT], Distance: 0.0km, ETA: < 1.0 min."
+        },
+        "TEST 4 \u2014 Emergency Dispatch (YE_MAIN_SB_080)": {
+          "status": "PASS",
+          "result": "Assigned: Tappal / Aligarh Cut Emergency Station, Distance: 22.75km, ETA: 14.37 min."
+        },
+        "TEST 5 \u2014 Total Blockage Scenario (0% Capacity)": {
+          "status": "PASS",
+          "result": "Total road closure confirmed: is_blocked=True, capacity_factor=0.0, infinite travel time."
+        },
+        "TEST 6 \u2014 Simulation Reset to Baseline": {
+          "status": "PASS",
+          "result": "Reset confirmed: Segment 50 restored to NORMAL (100% capacity, speed 90.7+ km/h)."
+        },
+        "TEST 7 \u2014 Provenance Transparency": {
+          "status": "PASS",
+          "result": "All risk outputs verified as relative risk percentiles and SIMULATION_DEPOT response posts."
+        },
+        "TEST 8 \u2014 Next.js 15 Production Build Artifacts": {
+          "status": "PASS",
+          "result": "Next.js production build verified (.next/BUILD_ID present, 0 build errors)."
+        }
+      }
+    },
+    "CP10 Real-Time Operational Intelligence": {
+      "tests_executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "duration_seconds": 1.437,
+      "status": "PASS",
+      "details": {
+        "TEST 1 \u2014 System status endpoint": {
+          "status": "PASS",
+          "result": "System status verified: Backend=ONLINE, Segments=405, Nodes=1863, Edges=3461."
+        },
+        "TEST 2 \u2014 Baseline mode": {
+          "status": "PASS",
+          "result": "Baseline mode operational: uses CP05 diurnal curves + NASA POWER reanalysis."
+        },
+        "TEST 3 \u2014 Live unavailable handling": {
+          "status": "PASS",
+          "result": "Explicit provenance labeling confirmed: Traffic=MOCK_OR_UNAVAILABLE (SURVEY_CALIBRATED_DIURNAL_BASELINE)."
+        },
+        "TEST 4 \u2014 Risk engine inference": {
+          "status": "PASS",
+          "result": "CP07 XGBoost inference confirmed: Score=0.05689999833703041, Percentile=98.52%, Category=CRITICAL_RISK."
+        },
+        "TEST 5 \u2014 Dense fog hazard detection": {
+          "status": "PASS",
+          "result": "Dense fog detected: Severity=CRITICAL, Rule=OPERATIONAL_RULE: fog_risk_code >= 2 or (dp_dep <= 1.5 and rh >= 90%)."
+        },
+        "TEST 6 \u2014 Congestion hazard detection": {
+          "status": "PASS",
+          "result": "High congestion detected: Ratio=65%, Severity=CRITICAL."
+        },
+        "TEST 7 \u2014 Night speed excess detection": {
+          "status": "PASS",
+          "result": "Nocturnal speed excess detected (+25 km/h at 02:00 IST): Severity=WARNING."
+        },
+        "TEST 8 \u2014 Compound hazard detection": {
+          "status": "PASS",
+          "result": "Compound risk detected: Compound multi-hazard condition active on YE_MAIN_SB_050 (DENSE_FOG + NIGHT_SPEED_EXCESS) with Risk Percentile 98.0%.."
+        },
+        "TEST 9 \u2014 Alert creation": {
+          "status": "PASS",
+          "result": "Alerts generated & persisted to SQLite: Total active=889, Top alert=ALT_YE_MAIN_SB_019_DENSE_FOG_20260819203704538865 (CRITICAL)."
+        },
+        "TEST 10 \u2014 Alert deduplication": {
+          "status": "PASS",
+          "result": "Alert deduplication verified: 889 unique (segment_id, hazard_type) keys in active set."
+        },
+        "TEST 11 \u2014 Alert acknowledgement": {
+          "status": "PASS",
+          "result": "Alert ALT_YE_MAIN_SB_019_DENSE_FOG_20260819203704538865 transitioned to ACKNOWLEDGED state."
+        },
+        "TEST 12 \u2014 Alert resolution": {
+          "status": "PASS",
+          "result": "Alert resolution confirmed: active alerts reduced to 0 upon baseline restoration."
+        },
+        "TEST 13 \u2014 VMS recommendation": {
+          "status": "PASS",
+          "result": "VMS Advisory generated: 'DENSE FOG AHEAD \u2014 MAX 60' (60 km/h), Policy=VMS_POLICY_ASSUMPTION (MoRTH Winter Fog Standard Advisory)."
+        },
+        "TEST 14 \u2014 Patrol recommendation": {
+          "status": "PASS",
+          "result": "Patrol recommendation generated: Target=YE_MAIN_SB_019, Depot=Greater Noida Pari Chowk Hub, ETA=11.55 min."
+        },
+        "TEST 15 \u2014 No secret leakage": {
+          "status": "PASS",
+          "result": "Zero credential leakage confirmed across public API payloads."
+        },
+        "TEST 16 \u2014 Deterministic baseline behavior": {
+          "status": "PASS",
+          "result": "Deterministic baseline verified: Segment 50 restored to 100% capacity, speed=96.8 km/h, risk=0.05689999833703041."
+        }
+      }
+    },
+    "CP11 Production Deployment & Observability": {
+      "tests_executed": 22,
+      "passed": 22,
+      "failed": 0,
+      "duration_seconds": 2.836,
+      "status": "PASS",
+      "details": {
+        "TEST 1 \u2014 Health endpoint (Liveness)": {
+          "status": "PASS",
+          "result": "Liveness probe verified: Status=HEALTHY, Total Segments=405."
+        },
+        "TEST 2 \u2014 Readiness endpoint": {
+          "status": "PASS",
+          "result": "Readiness verified: Graph (1863 nodes), Segments (405), Model (31 features), Database (READY)."
+        },
+        "TEST 3 \u2014 No secret leakage": {
+          "status": "PASS",
+          "result": "Zero credential or secret leakage confirmed across all diagnostic API responses."
+        },
+        "TEST 4 \u2014 CORS configuration": {
+          "status": "PASS",
+          "result": "CORS allowlist configured: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8000', 'http://127.0.0.1:8000']."
+        },
+        "TEST 5 \u2014 Invalid segment handling": {
+          "status": "PASS",
+          "result": "Structured 404 error returned for non-existent segment."
+        },
+        "TEST 6 \u2014 Invalid simulation payload": {
+          "status": "PASS",
+          "result": "Validation error caught for invalid segment prefix and capacity_factor > 1.0."
+        },
+        "TEST 7 \u2014 Invalid mode handling": {
+          "status": "PASS",
+          "result": "Structured error returned for unrecognized mode (HTTP 422)."
+        },
+        "TEST 8 \u2014 Request correlation ID": {
+          "status": "PASS",
+          "result": "X-Request-ID (test-corr-12345) and X-Process-Time-Ms (2.1ms) headers verified."
+        },
+        "TEST 9 \u2014 Live provider unavailable transparency": {
+          "status": "PASS",
+          "result": "Explicit provenance labeling: Status=MOCK_OR_UNAVAILABLE, Source=SURVEY_CALIBRATED_DIURNAL_BASELINE."
+        },
+        "TEST 10 \u2014 Risk engine singleton": {
+          "status": "PASS",
+          "result": "Singleton load-once architecture verified for CP07 XGBoost model."
+        },
+        "TEST 11 \u2014 Alert persistence after restart": {
+          "status": "PASS",
+          "result": "SQLite database persistence verified: 25802 persistent alert records in alerts.db."
+        },
+        "TEST 12 \u2014 Alert deduplication": {
+          "status": "PASS",
+          "result": "100% active alert uniqueness verified (889 unique (segment, hazard) keys)."
+        },
+        "TEST 13 \u2014 Demo controller & reset": {
+          "status": "PASS",
+          "result": "SIH 10-step demo controller and deterministic baseline reset verified."
+        },
+        "TEST 14 \u2014 Frontend production build": {
+          "status": "PASS",
+          "result": "Next.js production build artifacts verified (.next/BUILD_ID present)."
+        },
+        "TEST 15 \u2014 State endpoint performance": {
+          "status": "PASS",
+          "result": "405-segment state retrieval completed in 51.3 ms (Target: < 100 ms)."
+        },
+        "TEST 16 \u2014 Simulation endpoint performance": {
+          "status": "PASS",
+          "result": "What-if simulation completed in 43.99 ms (Target: < 100 ms)."
+        },
+        "TEST 17 \u2014 Routing endpoint performance": {
+          "status": "PASS",
+          "result": "Multi-objective diversion routing completed in 38.88 ms (Target: < 100 ms)."
+        },
+        "TEST 18 \u2014 Emergency dispatch performance": {
+          "status": "PASS",
+          "result": "Nearest depot emergency optimization completed in 42.0 ms (Target: < 100 ms)."
+        },
+        "TEST 19 \u2014 CP08 regression": {
+          "status": "PASS",
+          "result": "CP08 regression verified (16/16 tests PASS, 16 checks)."
+        },
+        "TEST 20 \u2014 CP09 Phase 1 regression": {
+          "status": "PASS",
+          "result": "CP09 Phase 1 regression verified (6/6 tests PASS, 6 checks)."
+        },
+        "TEST 21 \u2014 CP09 Phase 2 regression": {
+          "status": "PASS",
+          "result": "CP09 Phase 2 regression verified (8/8 tests PASS, 8 checks)."
+        },
+        "TEST 22 \u2014 CP10 regression": {
+          "status": "PASS",
+          "result": "CP10 operational intelligence regression verified (16/16 tests PASS, 16 checks)."
+        }
+      }
+    }
+  }
+}

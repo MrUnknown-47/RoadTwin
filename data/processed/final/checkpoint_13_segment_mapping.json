@@ -1,0 +1,57 @@
+{
+  "audit_name": "RoadTwin AI Representative Corridor Anchor to Segment Mapping",
+  "timestamp": "2026-08-19T21:15:30.964666",
+  "mapping_type": "REPRESENTATIVE_CORRIDOR_ANCHORS",
+  "anchors_count": 6,
+  "mapped_anchors": [
+    {
+      "name": "Greater Noida (Km 0.0)",
+      "lat": 28.448,
+      "lon": 77.502,
+      "sb_segment_id": "YE_MAIN_SB_001",
+      "nb_segment_id": "YE_MAIN_NB_183",
+      "chainage_km": 0.0
+    },
+    {
+      "name": "Jewar Toll Area (Km 35.0)",
+      "lat": 28.1465,
+      "lon": 77.585,
+      "sb_segment_id": "YE_MAIN_SB_037",
+      "nb_segment_id": "YE_MAIN_NB_148",
+      "chainage_km": 34.95
+    },
+    {
+      "name": "Tappal Interchange (Km 50.0)",
+      "lat": 28.025,
+      "lon": 77.625,
+      "sb_segment_id": "YE_MAIN_SB_051",
+      "nb_segment_id": "YE_MAIN_NB_134",
+      "chainage_km": 48.13
+    },
+    {
+      "name": "Mathura / Raya Cut (Km 103.0)",
+      "lat": 27.568,
+      "lon": 77.785,
+      "sb_segment_id": "YE_MAIN_SB_111",
+      "nb_segment_id": "YE_MAIN_NB_074",
+      "chainage_km": 107.03
+    },
+    {
+      "name": "Khandauli Toll (Km 141.0)",
+      "lat": 27.285,
+      "lon": 77.985,
+      "sb_segment_id": "YE_MAIN_SB_154",
+      "nb_segment_id": "YE_MAIN_NB_030",
+      "chainage_km": 148.56
+    },
+    {
+      "name": "Agra / Kuberpur (Km 165.0)",
+      "lat": 27.143,
+      "lon": 78.118,
+      "sb_segment_id": "YE_MAIN_SB_178",
+      "nb_segment_id": "YE_MAIN_NB_006",
+      "chainage_km": 170.23
+    }
+  ],
+  "directionality_preservation": "STRICT_CARRIAGEWAY_SEPARATION (SB and NB maintained independently)"
+}
