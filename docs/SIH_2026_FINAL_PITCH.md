@@ -96,7 +96,7 @@ Maintains real-time corridor state in-memory:
 ## 9. Real-Time Operational Hazard Intelligence (CP10)
 
 Rule-based operational hazard detector converting sensor states and risk predictions into actionable protocols:
-* **Dense Fog**: Triggered when $\text{fog\_risk\_code} \ge 2$ or $(T - T_d \le 1.5^\circ\text{C} \land RH \ge 90\%)$.
+* **Dense Fog**: Triggered when $\texttt{fog\_risk\_code} \ge 2$ or $(T - T_d \le 1.5^\circ\text{C} \land RH \ge 90\%)$.
 * **Variable Message Sign (VMS) Advisory**: Generates speed limits ($60\text{ km/h}$ in fog, $40\text{ km/h}$ in crash zones) and dual-line LED messages.
 * **Tactical Patrol Deployments**: Automatically deploys highway patrol units to high-risk visibility choke points.
 
